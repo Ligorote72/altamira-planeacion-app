@@ -10,7 +10,7 @@ let currentSearchQuery = '';
 let selectedBeneficiaryId = null;
 let currentRole = 'planeacion';
 
-const STORAGE_KEY = 'altamira_planeacion_beneficiarios_v1';
+const STORAGE_KEY = 'altamira_planeacion_beneficiarios_v2';
 
 // 2. Inicialización
 document.addEventListener('DOMContentLoaded', () => {
@@ -125,9 +125,15 @@ function renderCards() {
   grid.innerHTML = '';
 
   const filtered = dbBeneficiarios.filter(b => {
-    // Filtro por programa
-    const matchFilter = currentFilter === 'TODOS' || 
-                        b.programa.toUpperCase().includes(currentFilter.toUpperCase());
+    // Filtro por programa o fotos
+    let matchFilter = false;
+    if (currentFilter === 'TODOS') {
+      matchFilter = true;
+    } else if (currentFilter === 'CON_FOTOS') {
+      matchFilter = ((b.fotos?.antes?.length || 0) + (b.fotos?.despues?.length || 0)) > 0;
+    } else {
+      matchFilter = b.programa.toUpperCase().includes(currentFilter.toUpperCase());
+    }
     
     // Filtro por búsqueda
     const matchSearch = currentSearchQuery === '' ||
@@ -409,7 +415,15 @@ function updateKPIs() {
 }
 
 function updateFilterCounts() {
+  const conFotos = dbBeneficiarios.filter(b => 
+    (b.fotos.antes && b.fotos.antes.length > 0) || 
+    (b.fotos.despues && b.fotos.despues.length > 0)
+  ).length;
+
   document.getElementById('countTodos').textContent = dbBeneficiarios.length;
+  if (document.getElementById('countConFotos')) {
+    document.getElementById('countConFotos').textContent = conFotos;
+  }
   document.getElementById('countMejoramiento').textContent = dbBeneficiarios.filter(b => b.programa.includes('MEJORAMIENTO')).length;
   document.getElementById('countPozos').textContent = dbBeneficiarios.filter(b => b.programa.includes('POZO')).length;
   document.getElementById('countEstufas').textContent = dbBeneficiarios.filter(b => b.programa.includes('ESTUFA')).length;
