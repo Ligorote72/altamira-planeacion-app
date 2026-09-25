@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Sistema Maestro de Planeación y Evidencias • Municipio de Altamira</title>
+  <meta name="description" content="Plataforma institucional móvil de consulta, registro y evidencias fotográficas de obras y beneficiarios. Alcaldía de Altamira.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- SheetJS para Exportación a Excel en 1 clic -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- App Wrapper -->
+  <div class="app-wrapper">
+    
+    <!-- Top Header -->
+    <header class="top-header">
+      <div class="brand-block">
+        <div class="logo-badge">🏛️</div>
+        <div class="brand-text">
+          <h1>
+            ALCALDÍA DE ALTAMIRA 
+            <span class="badge-vigencia">VIGENCIA 2025</span>
+          </h1>
+          <p>Secretaría de Planeación y Obras Públicas • Sistema de Evidencias</p>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <div class="role-pill" id="roleSelectorBtn" title="Cambiar usuario o rol de acceso">
+          <span class="role-avatar" id="userRoleAvatar">P</span>
+          <span id="userRoleText">Planeación (Admin)</span>
+          <span style="font-size: 10px; opacity: 0.6;">▼</span>
+        </div>
+        
+        <button class="action-btn" id="btnExportExcel" title="Exportar consolidado actualizado a Excel">
+          <span>📊</span>
+          <span>Exportar Excel</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- KPI Cards Bar -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon green">👥</div>
+        <div class="kpi-content">
+          <div class="kpi-num" id="kpiTotalBeneficiarios">148</div>
+          <div class="kpi-label">Beneficiarios Registrados</div>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon amber">📸</div>
+        <div class="kpi-content">
+          <div class="kpi-num" id="kpiConFotos">0</div>
+          <div class="kpi-label">Con Evidencias Fotos</div>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon blue">🏗️</div>
+        <div class="kpi-content">
+          <div class="kpi-num" id="kpiProgramas">4</div>
+          <div class="kpi-label">Programas Activos</div>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon purple">🗺️</div>
+        <div class="kpi-content">
+          <div class="kpi-num" id="kpiVeredas">12</div>
+          <div class="kpi-label">Veredas Atendidas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Command Center: Search & Filter Chips -->
+    <section class="command-panel">
+      <!-- Search Input -->
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="globalSearchInput" 
+          class="search-input" 
+          placeholder="Buscar por Cédula (ej. 26452805) o Nombre (ej. Edith Gonzalez, Sandra Cano)..."
+          autocomplete="off"
+        >
+        <button id="clearSearchBtn" class="clear-search-btn" title="Limpiar búsqueda">✕</button>
+      </div>
+
+      <!-- Filters & Actions Row -->
+      <div class="filter-row">
+        <!-- Category Chips -->
+        <div class="chips-container" id="programChipsContainer">
+          <button class="chip-btn active" data-filter="TODOS">
+            Todos <span class="chip-count" id="countTodos">148</span>
+          </button>
+          <button class="chip-btn" data-filter="MEJORAMIENTO DE VIVIENDA">
+            Mejoramiento <span class="chip-count" id="countMejoramiento">25</span>
+          </button>
+          <button class="chip-btn" data-filter="POZO SEPTICO">
+            Pozos Sépticos <span class="chip-count" id="countPozos">20</span>
+          </button>
+          <button class="chip-btn" data-filter="ESTUFA ECOEFICIENTE">
+            Estufas <span class="chip-count" id="countEstufas">26</span>
+          </button>
+          <button class="chip-btn" data-filter="VIVIENDA PROPIA">
+            Vivienda Propia <span class="chip-count" id="countVivienda">77</span>
+          </button>
+        </div>
+
+        <!-- Right Quick Actions -->
+        <div class="filter-actions">
+          <button class="action-btn primary" id="btnOpenNewModal">
+            <span>➕</span>
+            <span>Nuevo Beneficiario</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Overview -->
+    <div class="results-header">
+      <div class="results-count">
+        Mostrando <strong id="visibleCount">148</strong> de <strong id="totalCount">148</strong> beneficiarios
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <main class="cards-grid" id="beneficiariosGrid">
+      <!-- Injected dynamically by JavaScript -->
+    </main>
+
+  </div> <!-- End App Wrapper -->
+
+  <!-- Floating Mobile Action Button -->
+  <button class="fab-btn" id="fabNewBeneficiary" title="Registrar Beneficiario Nuevo">
+    ➕
+  </button>
+
+  <!-- ==========================================================================
+       MODAL 1: FICHA TÉCNICA 360° & EVIDENCIAS FOTOGRÁFICAS
+       ========================================================================== -->
+  <div class="modal-overlay" id="beneficiaryModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="badge-prog" id="modalBadgeProg">MEJORAMIENTO DE VIVIENDA</span>
+          <h2 id="modalNombre" style="margin-top: 6px;">NOMBRE COMPLETO</h2>
+          <p id="modalCedulaVereda">Cédula: 00000000 • Vereda: MUNICIPIO ALTAMIRA</p>
+        </div>
+        <button class="btn-close-modal" id="btnCloseModal">✕</button>
+      </div>
+
+      <!-- Quick Info Grid -->
+      <div class="card-details-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+        <div class="detail-item">
+          <span class="detail-label">Cédula Registrada</span>
+          <span class="detail-val" id="modalValCedula">26452805</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Año / Vigencia</span>
+          <span class="detail-val" id="modalValVigencia" style="color: var(--amber-gold);">2025</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Sisbén / Detalle</span>
+          <span class="detail-val" id="modalValSisben">SISBEN B 1</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Celular / Contacto</span>
+          <span class="detail-val" id="modalValCelular">POR ASIGNAR</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Estado en Programa</span>
+          <span class="detail-val" id="modalValEstado" style="color: var(--emerald-primary);">APROBADO (SI)</span>
+        </div>
+      </div>
+
+      <!-- WhatsApp / Call Contact Button -->
+      <div style="margin-top: 14px; display: flex; gap: 10px;">
+        <button class="action-btn" id="modalBtnLlamar" style="flex: 1; justify-content: center;">
+          <span>📞</span> <span>Llamar Beneficiario</span>
+        </button>
+        <button class="action-btn" id="modalBtnWhatsApp" style="flex: 1; justify-content: center; background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.3); color: #25d366;">
+          <span>💬</span> <span>Escribir por WhatsApp</span>
+        </button>
+      </div>
+
+      <!-- Evidence Photos Section -->
+      <section class="evidence-section">
+        <h3>
+          <span>📸 Registro de Evidencias Fotográficas</span>
+          <span style="font-size: 0.78rem; color: var(--text-dim); font-weight: normal;">Subida directa de cámara o archivo</span>
+        </h3>
+
+        <div class="evidence-grid">
+          <!-- Columna ANTES -->
+          <div class="evidence-box" id="boxFotosAntes">
+            <div class="evidence-box-title antes">
+              <span>🟧</span> <span>EVIDENCIAS: ANTES (Estado Inicial)</span>
+            </div>
+            
+            <div class="photos-gallery-flex" id="galleryAntes">
+              <!-- Injected by JS -->
+            </div>
+
+            <!-- Upload Button for ANTES -->
+            <label class="upload-dropzone" style="margin-top: 10px;">
+              <input type="file" id="inputFotoAntes" accept="image/*" capture="environment" style="display: none;">
+              <span style="font-size: 24px;">📷</span>
+              <strong>Tomar / Subir Foto Antes</strong>
+              <span>Cámara o Galería</span>
+            </label>
+          </div>
+
+          <!-- Columna DESPUÉS -->
+          <div class="evidence-box" id="boxFotosDespues">
+            <div class="evidence-box-title despues">
+              <span>🟩</span> <span>EVIDENCIAS: DESPUÉS (Obra Entregada)</span>
+            </div>
+
+            <div class="photos-gallery-flex" id="galleryDespues">
+              <!-- Injected by JS -->
+            </div>
+
+            <!-- Upload Button for DESPUÉS -->
+            <label class="upload-dropzone" style="margin-top: 10px;">
+              <input type="file" id="inputFotoDespues" accept="image/*" capture="environment" style="display: none;">
+              <span style="font-size: 24px;">📸</span>
+              <strong>Tomar / Subir Foto Después</strong>
+              <span>Cámara o Galería</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Actions Footer -->
+      <div style="display: flex; justify-content: space-between; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+        <button class="action-btn" id="btnImprimirFicha">
+          <span>🖨️</span> <span>Imprimir Ficha Oficial</span>
+        </button>
+        <button class="action-btn primary" id="btnGuardarFicha">
+          <span>💾</span> <span>Guardar Cambios</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: REGISTRO DE NUEVO BENEFICIARIO
+       ========================================================================== -->
+  <div class="modal-overlay" id="newBeneficiaryModal">
+    <div class="modal-box" style="max-width: 580px;">
+      <div class="modal-header">
+        <div>
+          <h2>➕ Registrar Nuevo Beneficiario</h2>
+          <p>Municipio de Altamira • Vigencia 2025</p>
+        </div>
+        <button class="btn-close-modal" id="btnCloseNewModal">✕</button>
+      </div>
+
+      <form id="newBeneficiaryForm">
+        <div class="form-group">
+          <label class="form-label" for="newCedula">Número de Cédula *</label>
+          <input type="number" id="newCedula" class="form-input" placeholder="Ej. 1077867588" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="newNombre">Nombre Completo *</label>
+          <input type="text" id="newNombre" class="form-input" placeholder="Ej. MARÍA HELENA ROJAS" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="newPrograma">Programa Asignado *</label>
+          <select id="newPrograma" class="form-select" required>
+            <option value="MEJORAMIENTO DE VIVIENDA">MEJORAMIENTO DE VIVIENDA</option>
+            <option value="POZO SEPTICO">POZO SEPTICO</option>
+            <option value="ESTUFA ECOEFICIENTE">ESTUFA ECOEFICIENTE</option>
+            <option value="VIVIENDA PROPIA">VIVIENDA PROPIA</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="newVereda">Vereda / Ubicación *</label>
+            <input type="text" id="newVereda" class="form-input" placeholder="Ej. MINAS- MIRAGUA" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newSisben">Detalle / Sisbén</label>
+            <input type="text" id="newSisben" class="form-input" placeholder="Ej. SISBEN A 1">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="newCelular">Teléfono / Celular</label>
+            <input type="tel" id="newCelular" class="form-input" placeholder="Ej. 3123456789">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newVigencia">Vigencia / Año</label>
+            <input type="text" id="newVigencia" class="form-input" value="2025" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="newEstado">Estado en Programa</label>
+          <select id="newEstado" class="form-select">
+            <option value="APROBADO (SI)">APROBADO (SI)</option>
+            <option value="EN EJECUCION">EN EJECUCION</option>
+            <option value="TERMINADO / ENTREGADO">TERMINADO / ENTREGADO</option>
+            <option value="EN REVISION">EN REVISION</option>
+          </select>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+          <button type="button" class="action-btn" id="btnCancelNew">Cancelar</button>
+          <button type="submit" class="action-btn primary">Guardar en Base de Datos</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: SELECTOR DE ROL Y USUARIO
+       ========================================================================== -->
+  <div class="modal-overlay" id="roleModal">
+    <div class="modal-box" style="max-width: 440px;">
+      <div class="modal-header">
+        <div>
+          <h2>Seleccionar Perfil de Acceso</h2>
+          <p>Control de Permisos de Planeación</p>
+        </div>
+        <button class="btn-close-modal" id="btnCloseRoleModal">✕</button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <button class="role-option-btn action-btn" data-role="planeacion" style="justify-content: flex-start; padding: 14px;">
+          <span style="font-size: 24px;">👑</span>
+          <div style="text-align: left; margin-left: 8px;">
+            <strong>Secretaría de Planeación (Admin)</strong>
+            <div style="font-size: 0.75rem; color: var(--text-dim);">Control total, registro, edición y descarga</div>
+          </div>
+        </button>
+
+        <button class="role-option-btn action-btn" data-role="campo" style="justify-content: flex-start; padding: 14px;">
+          <span style="font-size: 24px;">👷</span>
+          <div style="text-align: left; margin-left: 8px;">
+            <strong>Ingeniero / Supervisor de Campo</strong>
+            <div style="font-size: 0.75rem; color: var(--text-dim);">Consulta de fichas y subida de fotos in situ</div>
+          </div>
+        </button>
+
+        <button class="role-option-btn action-btn" data-role="alcaldia" style="justify-content: flex-start; padding: 14px;">
+          <span style="font-size: 24px;">🏛️</span>
+          <div style="text-align: left; margin-left: 8px;">
+            <strong>Despacho Alcalde / Auditoría</strong>
+            <div style="font-size: 0.75rem; color: var(--text-dim);">Modo consulta, estadísticas e informes</div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
