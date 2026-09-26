@@ -144,21 +144,15 @@ function setupEventListeners() {
     });
   });
 
-  // Subida de Fotos en Modal
+  // Subida de Fotos en Modal (Directa y Múltiple)
   document.getElementById('inputFotoAntes').addEventListener('change', (e) => handlePhotoUpload(e, 'antes'));
   document.getElementById('inputFotoDespues').addEventListener('change', (e) => handlePhotoUpload(e, 'despues'));
 
-  // Pestañas de Evidencias en Modal
-  const evidenceTabBtns = document.querySelectorAll('.evidence-tab-btn');
-  evidenceTabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      evidenceTabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentEvidenceTab = btn.getAttribute('data-tab');
-      const b = dbBeneficiarios.find(item => item.id === selectedBeneficiaryId);
-      if (b) renderEvidenceGallery(b, currentEvidenceTab);
-    });
-  });
+  // Botón Inferior para Cerrar Ficha
+  const btnCerrarInferior = document.getElementById('btnCerrarModalInferior');
+  if (btnCerrarInferior) {
+    btnCerrarInferior.addEventListener('click', closeModal);
+  }
 
   // Controles del Lightbox
   const lightboxModal = document.getElementById('lightboxModal');
@@ -337,7 +331,7 @@ function highlightText(text, query) {
   return text.replace(regex, '<span style="background: rgba(0, 245, 160, 0.3); color: #fff; padding: 0 2px; border-radius: 2px;">$1</span>');
 }
 
-// 5. Modal Ficha Técnica y Expediente de Evidencias
+// 5. Modal Ficha Técnica y Expediente de Evidencias (Modo Directo y Simplificado)
 function openBeneficiaryModal(id) {
   selectedBeneficiaryId = id;
   const b = dbBeneficiarios.find(item => item.id === id);
@@ -373,171 +367,126 @@ function openBeneficiaryModal(id) {
     btnWhatsApp.style.opacity = '0.5';
   }
 
-  // Actualizar Contadores de Pestañas
-  updateEvidenceTabsCount(b);
-
-  // Reset a pestaña "todas"
-  currentEvidenceTab = 'todas';
-  document.querySelectorAll('.evidence-tab-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-tab') === 'todas');
-  });
-
-  // Renderizar Galería Completa
-  renderEvidenceGallery(b, 'todas');
+  // Renderizar Secciones Directas de Fotos: ANTES y DESPUÉS
+  renderDirectEvidenceBlocks(b);
 
   modal.classList.add('active');
 }
 
-function updateEvidenceTabsCount(b) {
-  const tot = getTotalEvidences(b);
-  const antesCount = b.fotos?.antes?.length || 0;
-  const despuesCount = b.fotos?.despues?.length || 0;
-  const videosCount = b.fotos?.videos?.length || 0;
-  const docsCount = b.fotos?.documentos?.length || 0;
-  const mediaCount = videosCount + docsCount;
+function renderDirectEvidenceBlocks(b) {
+  const gridAntes = document.getElementById('gridFotosAntes');
+  const gridDespues = document.getElementById('gridFotosDespues');
+  const counterAntes = document.getElementById('counterFotosAntes');
+  const counterDespues = document.getElementById('counterFotosDespues');
 
-  document.getElementById('tabBadgeTodas').textContent = tot;
-  document.getElementById('tabBadgeAntes').textContent = antesCount;
-  document.getElementById('tabBadgeDespues').textContent = despuesCount;
-  document.getElementById('tabBadgeMedia').textContent = mediaCount;
+  gridAntes.innerHTML = '';
+  gridDespues.innerHTML = '';
 
-  const parts = [];
-  if (antesCount > 0) parts.push(`${antesCount} Antes`);
-  if (despuesCount > 0) parts.push(`${despuesCount} Después`);
-  if (videosCount > 0) parts.push(`${videosCount} Video${videosCount > 1 ? 's' : ''}`);
-  if (docsCount > 0) parts.push(`${docsCount} Documento PDF`);
+  const fotosAntes = b.fotos?.antes || [];
+  const fotosDespues = b.fotos?.despues || [];
 
-  document.getElementById('evidenceStatsSummary').textContent = tot > 0 
-    ? `📁 ${tot} evidencias registradas en expediente (${parts.join(' • ')})`
-    : 'No se han registrado evidencias aún para este beneficiario.';
-}
+  counterAntes.textContent = `${fotosAntes.length} ${fotosAntes.length === 1 ? 'foto registrada' : 'fotos registradas'}`;
+  counterDespues.textContent = `${fotosDespues.length} ${fotosDespues.length === 1 ? 'foto registrada' : 'fotos registradas'}`;
 
-function renderEvidenceGallery(b, tab) {
-  const gallery = document.getElementById('mainEvidenceGallery');
-  gallery.innerHTML = '';
-
-  // Construir lista unificada de evidencias con su metadata
-  let items = [];
-  if (b.fotos?.todas && b.fotos.todas.length > 0) {
-    items = [...b.fotos.todas];
-  } else {
-    // Generar a partir de listas separadas
-    (b.fotos?.antes || []).forEach((src, idx) => items.push({ tipo: 'foto', fase: 'antes', src, nombre: `Foto Antes #${idx + 1}` }));
-    (b.fotos?.despues || []).forEach((src, idx) => items.push({ tipo: 'foto', fase: 'despues', src, nombre: `Foto Después #${idx + 1}` }));
-    (b.fotos?.videos || []).forEach((src, idx) => items.push({ tipo: 'video', fase: 'video', src, nombre: `Video Evidencia #${idx + 1}` }));
-    (b.fotos?.documentos || []).forEach((src, idx) => items.push({ tipo: 'documento', fase: 'doc', src, nombre: `Documento #${idx + 1}` }));
-  }
-
-  // Filtrar según pestaña activa
-  let filteredItems = [];
-  if (tab === 'todas') {
-    filteredItems = items;
-  } else if (tab === 'antes') {
-    filteredItems = items.filter(i => i.fase === 'antes');
-  } else if (tab === 'despues') {
-    filteredItems = items.filter(i => i.fase === 'despues');
-  } else if (tab === 'multimedia') {
-    filteredItems = items.filter(i => i.tipo === 'video' || i.tipo === 'documento');
-  }
-
-  if (filteredItems.length === 0) {
-    gallery.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 40px 10px; color: var(--text-dim);">
-        <div style="font-size: 32px; margin-bottom: 8px;">📷</div>
-        <p style="font-size: 0.85rem; color: #fff;">No hay evidencias en esta sección</p>
-        <p style="font-size: 0.78rem;">Utiliza los botones de arriba para subir fotos de Antes o Después</p>
-      </div>
-    `;
-    return;
-  }
-
-  // Lista solo de fotos para navegación secuencial en Lightbox
-  const photoItemsOnly = filteredItems.filter(i => i.tipo === 'foto');
-
-  filteredItems.forEach((item, index) => {
-    if (item.tipo === 'video') {
-      const card = document.createElement('div');
-      card.className = 'evidence-video-card';
-      card.innerHTML = `
-        <div class="video-label">
-          <span>🎬</span> <strong>Video de Evidencia en Terreno</strong>
-          <span style="font-size: 0.7rem; color: var(--text-dim); margin-left: auto;">${item.nombre || 'Video MP4'}</span>
+  // Helper para renderizar fotos de una fase (Antes / Después)
+  const renderPhotoGrid = (container, photosList, fase) => {
+    if (!photosList || photosList.length === 0) {
+      container.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 22px 10px; color: var(--text-dim); background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px dashed var(--border-subtle);">
+          <span style="font-size: 24px; display: block; margin-bottom: 4px;">📷</span>
+          <strong style="font-size: 0.82rem; color: #fff;">No hay fotos del ${fase} registradas</strong>
+          <div style="font-size: 0.74rem; color: var(--text-dim); margin-top: 3px;">Toca el botón de arriba "+ Subir Foto ${fase === 'antes' ? 'Antes' : 'Después'}" para agregar</div>
         </div>
-        <video src="${item.src}" controls playsinline preload="metadata"></video>
       `;
-      gallery.appendChild(card);
-    } else if (item.tipo === 'documento') {
-      const card = document.createElement('div');
-      card.className = 'evidence-doc-card';
-      card.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <span style="font-size: 28px;">📄</span>
-          <div>
-            <strong style="color: #fff; font-size: 0.85rem;">${item.nombre || 'Documento de Soporte'}</strong>
-            <div style="font-size: 0.75rem; color: var(--text-dim);">Archivo Oficial PDF</div>
-          </div>
-        </div>
-        <a href="${item.src}" target="_blank" class="action-btn" style="padding: 6px 14px; font-size: 0.78rem; text-decoration: none;">
-          Ver Documento
-        </a>
-      `;
-      gallery.appendChild(card);
-    } else {
-      // Fotografía
+      return;
+    }
+
+    const lightboxItems = photosList.map((src, i) => ({
+      src,
+      nombre: `Foto ${fase.toUpperCase()} #${i + 1} • ${b.nombre}`,
+      fase
+    }));
+
+    photosList.forEach((src, idx) => {
       const card = document.createElement('div');
       card.className = 'evidence-thumb-card';
-      
-      const faseLabel = item.fase === 'antes' ? 'Antes' : 'Después';
-      const faseClass = item.fase === 'antes' ? 'antes' : 'despues';
-
       card.innerHTML = `
-        <img src="${item.src}" class="evidence-thumb-img" alt="${item.nombre || 'Foto Evidencia'}" loading="lazy">
-        <span class="badge-fase ${faseClass}">${faseLabel}</span>
+        <img src="${src}" class="evidence-thumb-img" alt="Foto ${fase}" loading="lazy">
         <button class="evidence-delete-btn" title="Eliminar foto">✕</button>
       `;
 
-      // Eliminar foto
+      // Eliminar foto con confirmación
       card.querySelector('.evidence-delete-btn').addEventListener('click', (e) => {
         e.stopPropagation();
-        if (confirm('¿Deseas eliminar esta evidencia fotográfica?')) {
-          deleteEvidence(b, item);
+        if (confirm(`¿Deseas eliminar esta fotografía de ${fase}?`)) {
+          b.fotos[fase].splice(idx, 1);
+          if (b.fotos.todas) {
+            b.fotos.todas = b.fotos.todas.filter(item => item.src !== src);
+          }
+          saveToStorage();
+          renderDirectEvidenceBlocks(b);
+          renderCards();
+          updateKPIs();
         }
       });
 
-      // Abrir en Lightbox
+      // Abrir en visor de pantalla completa (Lightbox)
       card.addEventListener('click', () => {
-        const photoIndex = photoItemsOnly.findIndex(p => p.src === item.src);
-        openLightbox(photoItemsOnly, photoIndex >= 0 ? photoIndex : 0);
+        openLightbox(lightboxItems, idx);
       });
 
-      gallery.appendChild(card);
-    }
-  });
-}
+      container.appendChild(card);
+    });
+  };
 
-function deleteEvidence(b, item) {
-  // Eliminar de todas las estructuras
-  if (b.fotos.todas) {
-    b.fotos.todas = b.fotos.todas.filter(i => i.src !== item.src);
-  }
-  if (item.fase === 'antes' && b.fotos.antes) {
-    b.fotos.antes = b.fotos.antes.filter(src => src !== item.src);
-  }
-  if (item.fase === 'despues' && b.fotos.despues) {
-    b.fotos.despues = b.fotos.despues.filter(src => src !== item.src);
-  }
-  if (item.tipo === 'video' && b.fotos.videos) {
-    b.fotos.videos = b.fotos.videos.filter(src => src !== item.src);
-  }
-  if (item.tipo === 'documento' && b.fotos.documentos) {
-    b.fotos.documentos = b.fotos.documentos.filter(src => src !== item.src);
-  }
+  renderPhotoGrid(gridAntes, fotosAntes, 'antes');
+  renderPhotoGrid(gridDespues, fotosDespues, 'despues');
 
-  saveToStorage();
-  updateEvidenceTabsCount(b);
-  renderEvidenceGallery(b, currentEvidenceTab);
-  renderCards();
-  updateKPIs();
+  // Sección Multimedia (Videos y Documentos si existen)
+  const blockMedia = document.getElementById('blockMultimedia');
+  const gridMedia = document.getElementById('gridMultimedia');
+  const counterMedia = document.getElementById('counterMultimedia');
+  gridMedia.innerHTML = '';
+
+  const videos = b.fotos?.videos || [];
+  const docs = b.fotos?.documentos || [];
+  const totalMedia = videos.length + docs.length;
+
+  if (totalMedia > 0) {
+    blockMedia.style.display = 'block';
+    counterMedia.textContent = `${totalMedia} ${totalMedia === 1 ? 'archivo' : 'archivos'}`;
+
+    videos.forEach((vSrc, vIdx) => {
+      const vCard = document.createElement('div');
+      vCard.className = 'evidence-video-card';
+      vCard.innerHTML = `
+        <div class="video-label">
+          <span>🎬</span> <strong>Video de Evidencia #${vIdx + 1}</strong>
+        </div>
+        <video src="${vSrc}" controls playsinline preload="metadata"></video>
+      `;
+      gridMedia.appendChild(vCard);
+    });
+
+    docs.forEach((dSrc, dIdx) => {
+      const dCard = document.createElement('div');
+      dCard.className = 'evidence-doc-card';
+      dCard.innerHTML = `
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 24px;">📄</span>
+          <div>
+            <strong style="color: #fff; font-size: 0.82rem;">Documento PDF #${dIdx + 1}</strong>
+          </div>
+        </div>
+        <a href="${dSrc}" target="_blank" class="action-btn" style="padding: 6px 12px; font-size: 0.75rem; text-decoration: none;">
+          Ver Documento
+        </a>
+      `;
+      gridMedia.appendChild(dCard);
+    });
+  } else {
+    blockMedia.style.display = 'none';
+  }
 }
 
 function closeModal() {
@@ -587,27 +536,24 @@ function prevLightbox() {
   updateLightboxView();
 }
 
-// 7. Subida de Fotos en Vivo (Cámara o Galería)
+// 7. Subida de Fotos en Vivo (Múltiple y Sencilla desde Cámara o Galería)
 function handlePhotoUpload(e, type) {
-  const file = e.target.files[0];
-  if (!file || !selectedBeneficiaryId) return;
+  const files = e.target.files;
+  if (!files || files.length === 0 || !selectedBeneficiaryId) return;
 
-  const reader = new FileReader();
-  reader.onload = (event) => {
-    const base64Data = event.target.result;
-    const b = dbBeneficiarios.find(item => item.id === selectedBeneficiaryId);
-    if (b) {
-      if (!b.fotos) b.fotos = { antes: [], despues: [], videos: [], documentos: [], todas: [] };
-      if (!b.fotos[type]) b.fotos[type] = [];
-      if (!b.fotos.todas) b.fotos.todas = [];
+  const b = dbBeneficiarios.find(item => item.id === selectedBeneficiaryId);
+  if (!b) return;
 
+  if (!b.fotos) b.fotos = { antes: [], despues: [], videos: [], documentos: [], todas: [] };
+  if (!b.fotos[type]) b.fotos[type] = [];
+  if (!b.fotos.todas) b.fotos.todas = [];
+
+  let loadedCount = 0;
+  Array.from(files).forEach((file) => {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const base64Data = event.target.result;
       const isVideo = file.type.startsWith('video');
-      const item = {
-        tipo: isVideo ? 'video' : 'foto',
-        fase: type,
-        src: base64Data,
-        nombre: file.name || `Nueva evidencia ${type}`
-      };
 
       if (isVideo) {
         if (!b.fotos.videos) b.fotos.videos = [];
@@ -615,17 +561,26 @@ function handlePhotoUpload(e, type) {
       } else {
         b.fotos[type].push(base64Data);
       }
-      b.fotos.todas.push(item);
 
-      saveToStorage();
-      updateEvidenceTabsCount(b);
-      renderEvidenceGallery(b, currentEvidenceTab);
-      renderCards();
-      updateKPIs();
-    }
-  };
-  reader.readAsDataURL(file);
-  e.target.value = ''; // Reset input
+      b.fotos.todas.push({
+        tipo: isVideo ? 'video' : 'foto',
+        fase: type,
+        src: base64Data,
+        nombre: file.name || `Nueva evidencia ${type}`
+      });
+
+      loadedCount++;
+      if (loadedCount === files.length) {
+        saveToStorage();
+        renderDirectEvidenceBlocks(b);
+        renderCards();
+        updateKPIs();
+      }
+    };
+    reader.readAsDataURL(file);
+  });
+
+  e.target.value = ''; // Reset input para permitir subir la misma foto si se desea
 }
 
 // 8. Formulario Nuevo Beneficiario

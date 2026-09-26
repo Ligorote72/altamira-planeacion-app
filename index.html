@@ -14,7 +14,7 @@
   <!-- SheetJS para Exportación a Excel en 1 clic -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-  <link rel="stylesheet" href="css/styles.css?v=3.0">
+  <link rel="stylesheet" href="css/styles.css?v=3.5">
 </head>
 <body>
 
@@ -196,65 +196,69 @@
         </button>
       </div>
 
-      <!-- Evidence Photos & Dossier Suite -->
-      <section class="evidence-section">
-        <div class="evidence-section-header">
-          <div>
-            <h3>
-              <span>📁 Expediente de Evidencias (Fotos, Videos y Documentos)</span>
-            </h3>
-            <p id="evidenceStatsSummary" style="font-size: 0.8rem; color: var(--text-dim); margin-top: 3px;">
-              Cargando evidencias...
-            </p>
-          </div>
-          <!-- Upload Actions Group -->
-          <div style="display: flex; gap: 8px;">
-            <label class="action-btn" style="cursor: pointer; padding: 6px 12px; font-size: 0.78rem;">
-              <input type="file" id="inputFotoAntes" accept="image/*,video/*" capture="environment" style="display: none;">
-              <span>🟧 + Foto Antes</span>
-            </label>
-            <label class="action-btn" style="cursor: pointer; padding: 6px 12px; font-size: 0.78rem;">
-              <input type="file" id="inputFotoDespues" accept="image/*,video/*" capture="environment" style="display: none;">
-              <span>🟩 + Foto Después</span>
+      <!-- Direct Simple Evidence Sections (Antes y Después) -->
+      <div class="evidence-direct-container">
+        
+        <!-- SECCIÓN 1: FOTOS DEL ANTES -->
+        <div class="evidence-simple-block antes">
+          <div class="simple-block-header">
+            <div>
+              <span class="block-title antes">🟧 FOTOS DEL ANTES (Estado Inicial)</span>
+              <span class="block-counter" id="counterFotosAntes">0 fotos</span>
+            </div>
+            <!-- Botón Grande Directo para Subir Fotos del Antes -->
+            <label class="btn-subir-directo antes" title="Tomar foto con la cámara o subir desde la galería">
+              <input type="file" id="inputFotoAntes" accept="image/*" multiple capture="environment" style="display: none;">
+              <span>📷 + Subir Foto Antes</span>
             </label>
           </div>
-        </div>
-
-        <!-- Evidence Filter Tabs -->
-        <div class="evidence-tabs" id="modalEvidenceTabs">
-          <button class="evidence-tab-btn active" data-tab="todas">
-            <span>🖼️ Todas</span>
-            <span class="tab-badge" id="tabBadgeTodas">0</span>
-          </button>
-          <button class="evidence-tab-btn" data-tab="antes">
-            <span>🟧 Antes</span>
-            <span class="tab-badge antes" id="tabBadgeAntes">0</span>
-          </button>
-          <button class="evidence-tab-btn" data-tab="despues">
-            <span>🟩 Después</span>
-            <span class="tab-badge despues" id="tabBadgeDespues">0</span>
-          </button>
-          <button class="evidence-tab-btn" data-tab="multimedia">
-            <span>🎬 Videos & Docs</span>
-            <span class="tab-badge multimedia" id="tabBadgeMedia">0</span>
-          </button>
-        </div>
-
-        <!-- Main Responsive Evidence Gallery Grid -->
-        <div class="evidence-gallery-container">
-          <div class="evidence-gallery-grid" id="mainEvidenceGallery">
+          <!-- Cuadrícula Limpia de Fotos del Antes -->
+          <div class="direct-photos-grid" id="gridFotosAntes">
             <!-- Injected by JS -->
           </div>
         </div>
-      </section>
 
-      <!-- Modal Actions Footer -->
-      <div style="display: flex; justify-content: space-between; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
-        <button class="action-btn" id="btnImprimirFicha">
-          <span>🖨️</span> <span>Imprimir Ficha Oficial</span>
+        <!-- SECCIÓN 2: FOTOS DEL DESPUÉS -->
+        <div class="evidence-simple-block despues">
+          <div class="simple-block-header">
+            <div>
+              <span class="block-title despues">🟩 FOTOS DEL DESPUÉS (Obra Entregada)</span>
+              <span class="block-counter" id="counterFotosDespues">0 fotos</span>
+            </div>
+            <!-- Botón Grande Directo para Subir Fotos del Después -->
+            <label class="btn-subir-directo despues" title="Tomar foto con la cámara o subir desde la galería">
+              <input type="file" id="inputFotoDespues" accept="image/*" multiple capture="environment" style="display: none;">
+              <span>📸 + Subir Foto Después</span>
+            </label>
+          </div>
+          <!-- Cuadrícula Limpia de Fotos del Después -->
+          <div class="direct-photos-grid" id="gridFotosDespues">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+        <!-- SECCIÓN 3: VIDEOS Y DOCUMENTOS (Si Aplica) -->
+        <div class="evidence-simple-block multimedia" id="blockMultimedia" style="display: none;">
+          <div class="simple-block-header">
+            <div>
+              <span class="block-title media">🎬 VIDEOS Y DOCUMENTOS DE TERRENO</span>
+              <span class="block-counter" id="counterMultimedia">0 archivos</span>
+            </div>
+          </div>
+          <div class="direct-photos-grid" id="gridMultimedia">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Actions Footer (Sencillo y Accesible) -->
+      <div style="display: flex; gap: 10px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+        <button class="action-btn" id="btnCerrarModalInferior" style="flex: 1; justify-content: center; background: rgba(255,255,255,0.06); padding: 12px; font-size: 0.9rem;">
+          <span>✕ Cerrar Ficha</span>
         </button>
-        <button class="action-btn primary" id="btnGuardarFicha">
-          <span>💾</span> <span>Guardar Cambios</span>
+        <button class="action-btn" id="btnImprimirFicha" style="padding: 12px 18px;">
+          <span>🖨️ Imprimir</span>
         </button>
       </div>
 
@@ -397,8 +401,8 @@
     </div>
   </div>
 
-  <!-- Scripts con Cache-Buster v3.0 -->
-  <script src="js/data.js?v=3.0"></script>
-  <script src="js/app.js?v=3.0"></script>
+  <!-- Scripts con Cache-Buster v3.5 -->
+  <script src="js/data.js?v=3.5"></script>
+  <script src="js/app.js?v=3.5"></script>
 </body>
 </html>
