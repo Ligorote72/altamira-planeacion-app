@@ -14,7 +14,7 @@
   <!-- SheetJS para Exportación a Excel en 1 clic -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=3.0">
 </head>
 <body>
 
@@ -196,50 +196,54 @@
         </button>
       </div>
 
-      <!-- Evidence Photos Section -->
+      <!-- Evidence Photos & Dossier Suite -->
       <section class="evidence-section">
-        <h3>
-          <span>📸 Registro de Evidencias Fotográficas</span>
-          <span style="font-size: 0.78rem; color: var(--text-dim); font-weight: normal;">Subida directa de cámara o archivo</span>
-        </h3>
-
-        <div class="evidence-grid">
-          <!-- Columna ANTES -->
-          <div class="evidence-box" id="boxFotosAntes">
-            <div class="evidence-box-title antes">
-              <span>🟧</span> <span>EVIDENCIAS: ANTES (Estado Inicial)</span>
-            </div>
-            
-            <div class="photos-gallery-flex" id="galleryAntes">
-              <!-- Injected by JS -->
-            </div>
-
-            <!-- Upload Button for ANTES -->
-            <label class="upload-dropzone" style="margin-top: 10px;">
-              <input type="file" id="inputFotoAntes" accept="image/*" capture="environment" style="display: none;">
-              <span style="font-size: 24px;">📷</span>
-              <strong>Tomar / Subir Foto Antes</strong>
-              <span>Cámara o Galería</span>
+        <div class="evidence-section-header">
+          <div>
+            <h3>
+              <span>📁 Expediente de Evidencias (Fotos, Videos y Documentos)</span>
+            </h3>
+            <p id="evidenceStatsSummary" style="font-size: 0.8rem; color: var(--text-dim); margin-top: 3px;">
+              Cargando evidencias...
+            </p>
+          </div>
+          <!-- Upload Actions Group -->
+          <div style="display: flex; gap: 8px;">
+            <label class="action-btn" style="cursor: pointer; padding: 6px 12px; font-size: 0.78rem;">
+              <input type="file" id="inputFotoAntes" accept="image/*,video/*" capture="environment" style="display: none;">
+              <span>🟧 + Foto Antes</span>
+            </label>
+            <label class="action-btn" style="cursor: pointer; padding: 6px 12px; font-size: 0.78rem;">
+              <input type="file" id="inputFotoDespues" accept="image/*,video/*" capture="environment" style="display: none;">
+              <span>🟩 + Foto Después</span>
             </label>
           </div>
+        </div>
 
-          <!-- Columna DESPUÉS -->
-          <div class="evidence-box" id="boxFotosDespues">
-            <div class="evidence-box-title despues">
-              <span>🟩</span> <span>EVIDENCIAS: DESPUÉS (Obra Entregada)</span>
-            </div>
+        <!-- Evidence Filter Tabs -->
+        <div class="evidence-tabs" id="modalEvidenceTabs">
+          <button class="evidence-tab-btn active" data-tab="todas">
+            <span>🖼️ Todas</span>
+            <span class="tab-badge" id="tabBadgeTodas">0</span>
+          </button>
+          <button class="evidence-tab-btn" data-tab="antes">
+            <span>🟧 Antes</span>
+            <span class="tab-badge antes" id="tabBadgeAntes">0</span>
+          </button>
+          <button class="evidence-tab-btn" data-tab="despues">
+            <span>🟩 Después</span>
+            <span class="tab-badge despues" id="tabBadgeDespues">0</span>
+          </button>
+          <button class="evidence-tab-btn" data-tab="multimedia">
+            <span>🎬 Videos & Docs</span>
+            <span class="tab-badge multimedia" id="tabBadgeMedia">0</span>
+          </button>
+        </div>
 
-            <div class="photos-gallery-flex" id="galleryDespues">
-              <!-- Injected by JS -->
-            </div>
-
-            <!-- Upload Button for DESPUÉS -->
-            <label class="upload-dropzone" style="margin-top: 10px;">
-              <input type="file" id="inputFotoDespues" accept="image/*" capture="environment" style="display: none;">
-              <span style="font-size: 24px;">📸</span>
-              <strong>Tomar / Subir Foto Después</strong>
-              <span>Cámara o Galería</span>
-            </label>
+        <!-- Main Responsive Evidence Gallery Grid -->
+        <div class="evidence-gallery-container">
+          <div class="evidence-gallery-grid" id="mainEvidenceGallery">
+            <!-- Injected by JS -->
           </div>
         </div>
       </section>
@@ -372,8 +376,29 @@
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <!-- ==========================================================================
+       MODAL 4: VISOR FOTOGRÁFICO LIGHTBOX DE ALTA RESOLUCIÓN
+       ========================================================================== -->
+  <div class="lightbox-overlay" id="lightboxModal">
+    <button class="lightbox-close-btn" id="btnLightboxClose" title="Cerrar visor (Esc)">✕</button>
+    
+    <div class="lightbox-container">
+      <button class="lightbox-nav-btn prev" id="btnLightboxPrev" title="Anterior (Flecha Izquierda)">❮</button>
+      
+      <div class="lightbox-content">
+        <img src="" id="lightboxImg" alt="Fotografía en alta resolución" class="lightbox-image">
+        <div class="lightbox-meta">
+          <div id="lightboxTitle" style="font-weight: 600; color: #fff; font-size: 0.95rem;">Foto</div>
+          <div id="lightboxCounter" style="font-size: 0.8rem; color: var(--emerald-primary); font-weight: 600;">1 / 1</div>
+        </div>
+      </div>
+
+      <button class="lightbox-nav-btn next" id="btnLightboxNext" title="Siguiente (Flecha Derecha)">❯</button>
+    </div>
+  </div>
+
+  <!-- Scripts con Cache-Buster v3.0 -->
+  <script src="js/data.js?v=3.0"></script>
+  <script src="js/app.js?v=3.0"></script>
 </body>
 </html>

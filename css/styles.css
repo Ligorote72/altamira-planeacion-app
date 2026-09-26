@@ -663,96 +663,345 @@ body::after {
   border-color: var(--rose-accent);
 }
 
-/* Evidence Photos Section in Modal */
+/* Evidence Photos & Dossier Section in Modal */
 .evidence-section {
   margin-top: 20px;
 }
 
-.evidence-section h3 {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  margin-bottom: 12px;
+.evidence-section-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.evidence-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.evidence-box {
-  background: var(--bg-surface-elevated);
-  border: 1px dashed var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  text-align: center;
-}
-
-.evidence-box.has-photos {
-  border-style: solid;
-  border-color: var(--border-subtle);
-}
-
-.evidence-box-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.evidence-section-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 6px;
 }
 
-.evidence-box-title.antes { color: var(--amber-gold); }
-.evidence-box-title.despues { color: var(--emerald-primary); }
+.evidence-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
 
-.photos-gallery-flex {
+.evidence-tab-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.evidence-tab-btn:hover {
+  border-color: var(--border-glow);
+  color: #fff;
+}
+
+.evidence-tab-btn.active {
+  background: rgba(0, 245, 160, 0.12);
+  border-color: var(--emerald-primary);
+  color: #fff;
+}
+
+.tab-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  color: #fff;
+}
+
+.tab-badge.antes {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--amber-gold);
+}
+
+.tab-badge.despues {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--emerald-primary);
+}
+
+.tab-badge.multimedia {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.evidence-gallery-container {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  min-height: 200px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.evidence-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.evidence-thumb-card {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--border-subtle);
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evidence-thumb-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--emerald-primary);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.evidence-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badge-fase {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.badge-fase.antes {
+  background: rgba(245, 158, 11, 0.9);
+  color: #000;
+}
+
+.badge-fase.despues {
+  background: rgba(16, 185, 129, 0.9);
+  color: #042f20;
+}
+
+.badge-fase.video {
+  background: rgba(59, 130, 246, 0.9);
+  color: #fff;
+}
+
+.badge-fase.doc {
+  background: rgba(239, 68, 68, 0.9);
+  color: #fff;
+}
+
+.evidence-delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 3;
+}
+
+.evidence-thumb-card:hover .evidence-delete-btn {
+  opacity: 1;
+}
+
+.evidence-delete-btn:hover {
+  background: var(--rose-accent);
+}
+
+/* Video Card */
+.evidence-video-card {
+  grid-column: span 2;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #090e15;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
-.photo-preview-img {
+.evidence-video-card video {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: var(--transition-fast);
+  max-height: 180px;
+  border-radius: var(--radius-xs);
+  outline: none;
+  background: #000;
+}
+
+.video-label {
+  font-size: 0.75rem;
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Document Card */
+.evidence-doc-card {
+  grid-column: span 2;
+  background: #131b26;
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.photo-preview-img:hover {
-  transform: scale(1.02);
-  border-color: var(--emerald-primary);
+/* Fullscreen Lightbox Styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.upload-dropzone {
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-container {
+  position: relative;
+  width: 92vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  max-width: 86vw;
+  max-height: 84vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 10px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: var(--radius-sm);
-  border: 1px dashed rgba(255, 255, 255, 0.15);
-  transition: var(--transition-fast);
 }
 
-.upload-dropzone:hover {
-  background: rgba(0, 245, 160, 0.05);
+.lightbox-image {
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lightbox-meta {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 8px 16px;
+  background: rgba(18, 26, 36, 0.85);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.lightbox-nav-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  user-select: none;
+  z-index: 2005;
+}
+
+.lightbox-nav-btn:hover {
+  background: var(--emerald-primary);
+  color: #042f20;
   border-color: var(--emerald-primary);
 }
 
-.upload-dropzone span {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 6px;
+.lightbox-nav-btn.prev {
+  position: absolute;
+  left: 12px;
+}
+
+.lightbox-nav-btn.next {
+  position: absolute;
+  right: 12px;
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  z-index: 2010;
+}
+
+.lightbox-close-btn:hover {
+  background: var(--rose-accent);
+  border-color: var(--rose-accent);
 }
 
 /* Floating Action Button (Mobile First) */

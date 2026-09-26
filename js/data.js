@@ -1,4 +1,4 @@
-// Base de Datos Oficial Municipio de Altamira (148 Beneficiarios con Fotos Vinculadas)
+// Base de Datos Oficial Municipio de Altamira (148 Beneficiarios con 330 Evidencias Vinculadas)
 const INITIAL_BENEFICIARIOS = [
   {
     "id": 1,
@@ -12,7 +12,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -28,7 +31,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -44,7 +50,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -60,7 +69,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -76,7 +88,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -92,7 +107,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -108,7 +126,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -124,7 +145,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -140,7 +164,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -156,7 +183,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -172,7 +202,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -188,7 +221,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -204,7 +240,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -220,7 +259,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -236,7 +278,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -252,7 +297,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -268,7 +316,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -284,7 +335,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -300,7 +354,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -316,7 +373,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -332,26 +392,125 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/SANDRA_CANO/1.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/10.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/11.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/12.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/13.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/14.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/15.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/16.jpeg"
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_08.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/SANDRA_CANO/2.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/3.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/4.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/5.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/6.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/7.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/8.jpeg",
-        "assets/fotos_beneficiarios/SANDRA_CANO/9.jpeg"
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_08.jpg"
       ],
-      "total": 16
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_01.jpg",
+          "nombre": "1.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_02.jpg",
+          "nombre": "10.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_03.jpg",
+          "nombre": "11.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_04.jpg",
+          "nombre": "12.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_05.jpg",
+          "nombre": "13.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_06.jpg",
+          "nombre": "14.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_07.jpg",
+          "nombre": "15.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_antes_08.jpg",
+          "nombre": "16.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_01.jpg",
+          "nombre": "2.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_02.jpg",
+          "nombre": "3.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_03.jpg",
+          "nombre": "4.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_04.jpg",
+          "nombre": "5.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_05.jpg",
+          "nombre": "6.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_06.jpg",
+          "nombre": "7.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_07.jpg",
+          "nombre": "8.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/SANDRA_CANO/evidencia_despues_08.jpg",
+          "nombre": "9.jpeg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -366,8 +525,49 @@ const INITIAL_BENEFICIARIOS = [
     "estado": "APROBADO (SI)",
     "vigencia": "2025",
     "fotos": {
-      "antes": [],
-      "despues": []
+      "antes": [
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_02.jpg"
+      ],
+      "despues": [
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_03.jpg"
+      ],
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-04 a las 09.18.53_17deb24d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-04 a las 09.18.53_415ea4c5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_01.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.53 (1).jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_02.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.53.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_03.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.54.jpeg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -383,27 +583,132 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/1.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/1WhatsApp_Image_2025_12_30_at_17.39.49.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/2.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/3.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/4.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/5.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/6.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/7.jpg"
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_08.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/8.jpg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/W1hatsApp_Image_2025_12_30_at_17.39.49.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/W23hatsApp_Image_2025_12_17_at_09.35.30.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Image_2025_12_126_at_15.45.18.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Image_2025_12_17_at_09.2235.30.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Image_2025_12_30_at_17.39.489.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Image_2025_12_30_at_17.39.49.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Image_2025_12_301_at_17.39.49.jpeg",
-        "assets/fotos_beneficiarios/EDDY_GONZALEZ/WhatsApp_Imqage_2025_12_17_at_09.35.30.jpeg"
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_09.jpg"
       ],
-      "total": 17
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_02.jpg",
+          "nombre": "1WhatsApp Image 2025-12-30 at 17.39.49.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_03.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_04.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_05.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_06.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_07.jpg",
+          "nombre": "6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_antes_08.jpg",
+          "nombre": "7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_01.jpg",
+          "nombre": "8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_02.jpg",
+          "nombre": "W1hatsApp Image 2025-12-30 at 17.39.49.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_03.jpg",
+          "nombre": "W23hatsApp Image 2025-12-17 at 09.35.30.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_04.jpg",
+          "nombre": "WhatsApp Image 2025-12-126 at 15.45.18.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_05.jpg",
+          "nombre": "WhatsApp Image 2025-12-17 at 09.2235.30.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_06.jpg",
+          "nombre": "WhatsApp Image 2025-12-30 at 17.39.489.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_07.jpg",
+          "nombre": "WhatsApp Image 2025-12-30 at 17.39.49.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_08.jpg",
+          "nombre": "WhatsApp Image 2025-12-301 at 17.39.49.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/EDDY_GONZALEZ/evidencia_despues_09.jpg",
+          "nombre": "WhatsApp Imqage 2025-12-17 at 09.35.30.jpeg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -419,33 +724,174 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/1.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/2.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/3.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/4.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/5.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/6.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/7.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.00_e2fefb50.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.01_74301b3c.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.01_dcb2767f.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.01_e2bfc74e.jpg"
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_08.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_09.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_10.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_11.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.02_008b41ce.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.02_57f52cfd.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.02_8d832542.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.03_206c30db.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.03_b3558cb8.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.04_03dca607.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.04_b2750f44.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.05_9976d868.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.05_c93dca3f.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_18.18.06_bbabc3ee.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_19.20.27_17c37670.jpg",
-        "assets/fotos_beneficiarios/CARMEN_EMILIA/Imagen_de_WhatsApp_2025_10_09_a_las_19.20.27_43309ae9.jpg"
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_09.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_10.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_11.jpg",
+        "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_12.jpg"
       ],
-      "total": 23
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_02.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_03.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_04.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_05.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_06.jpg",
+          "nombre": "6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_07.jpg",
+          "nombre": "7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.00_e2fefb50.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.01_74301b3c.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.01_dcb2767f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_antes_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.01_e2bfc74e.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.02_008b41ce.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.02_57f52cfd.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.02_8d832542.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.03_206c30db.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.03_b3558cb8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.04_03dca607.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.04_b2750f44.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.05_9976d868.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.05_c93dca3f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.18.06_bbabc3ee.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 19.20.27_17c37670.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CARMEN_EMILIA/evidencia_despues_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 19.20.27_43309ae9.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -461,28 +907,139 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/1.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/2Image_2026_01_15_at_09.37.21.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsA222pp_Image_2026_01_15_at_09.22.33.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Imag2e_2026_03_16_at_10.17.00.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at_09.22.31.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at_09.221.31.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at_09.29.5022.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at_093.22.31.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at_093.22.33.jpeg"
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_08.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_09.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_15_at2_09.22.32.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_01_2215_at_09.22.33.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_03_16_a1t_10.16.42.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_03_16_at_10.16.41.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_03_16_at_10.16.443.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_03_16_at_104.16.43.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_2026_03_16_at11_10.16.42.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp_Image_20276_01_15_at_09.22.33.jpeg",
-        "assets/fotos_beneficiarios/FANNY_ORTIZ/WhatsApp44_Image_2026_01_15_at_09.22.33.jpeg"
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_09.jpg"
       ],
-      "total": 18
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_01.jpg",
+          "nombre": "1.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_02.jpg",
+          "nombre": "2Image 2026-01-15 at 09.37.21.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_03.jpg",
+          "nombre": "WhatsA222pp Image 2026-01-15 at 09.22.33.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_04.jpg",
+          "nombre": "WhatsApp Imag2e 2026-03-16 at 10.17.00.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_05.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at 09.22.31.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_06.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at 09.221.31.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_07.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at 09.29.5022.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_08.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at 093.22.31.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_antes_09.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at 093.22.33.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_01.jpg",
+          "nombre": "WhatsApp Image 2026-01-15 at2 09.22.32.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_02.jpg",
+          "nombre": "WhatsApp Image 2026-01-2215 at 09.22.33.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_03.jpg",
+          "nombre": "WhatsApp Image 2026-03-16 a1t 10.16.42.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_04.jpg",
+          "nombre": "WhatsApp Image 2026-03-16 at 10.16.41.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_05.jpg",
+          "nombre": "WhatsApp Image 2026-03-16 at 10.16.443.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_06.jpg",
+          "nombre": "WhatsApp Image 2026-03-16 at 104.16.43.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_07.jpg",
+          "nombre": "WhatsApp Image 2026-03-16 at11 10.16.42.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_08.jpg",
+          "nombre": "WhatsApp Image 20276-01-15 at 09.22.33.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/FANNY_ORTIZ/evidencia_despues_09.jpg",
+          "nombre": "WhatsApp44 Image 2026-01-15 at 09.22.33.jpeg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -498,37 +1055,202 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_07_a_las_16.36.24_8ce87a97.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_07_a_las_16.36.25_eff4ae9a.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.06_24e6ddc5.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.06_c751ab85.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.07_1a301579.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.07_3378129b.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.07_5579eaf0.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_09.56.07_79758a3f.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_16.53.02_e484f058.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_16.53.03_2f83a9bd.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_16.53.03_5ee8def0.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_16.53.03_cb3fc071.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.53_f767608c.jpg"
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_08.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_09.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_10.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_11.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_12.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_13.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.54_27036379.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.54_496b7642.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.54_50982072.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.54_8049fed6.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_02_a_las_11.05.55_0ecebcb3.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_04_a_las_09.52.41_5a1b7908.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_04_a_las_09.52.42_03e6cabd.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_04_a_las_09.52.42_089bb4fe.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_04_a_las_09.52.42_e9ee9cd9.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_04_a_las_09.52.42_f2f598d3.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_09_a_las_09.40.16_424c649b.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_09_a_las_09.40.16_5f17147b.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_09_a_las_09.40.16_aad023c5.jpg",
-        "assets/fotos_beneficiarios/MARTHA_TOVAR/Imagen_de_WhatsApp_2025_12_09_a_las_09.40.17_59843552.jpg"
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_09.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_10.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_11.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_12.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_13.jpg",
+        "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_14.jpg"
       ],
-      "total": 27
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-07 a las 16.36.24_8ce87a97.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-07 a las 16.36.25_eff4ae9a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.06_24e6ddc5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.06_c751ab85.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.07_1a301579.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.07_3378129b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.07_5579eaf0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 09.56.07_79758a3f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.53.02_e484f058.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.53.03_2f83a9bd.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.53.03_5ee8def0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.53.03_cb3fc071.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_antes_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.53_f767608c.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.54_27036379.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.54_496b7642.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.54_50982072.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.54_8049fed6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.05.55_0ecebcb3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.52.41_5a1b7908.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.52.42_03e6cabd.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.52.42_089bb4fe.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.52.42_e9ee9cd9.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.52.42_f2f598d3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.40.16_424c649b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.40.16_5f17147b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.40.16_aad023c5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_TOVAR/evidencia_despues_14.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.40.17_59843552.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -544,19 +1266,91 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/1.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/2.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/3.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/4.jpg"
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_04.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/5.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/6.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/7.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/8.jpg",
-        "assets/fotos_beneficiarios/GLORIA_ESPERANZA_BORREGO/9.jpg"
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_05.jpg"
       ],
-      "total": 9
+      "videos": [
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/video_evidencia_01.mp4",
+        "assets/fotos_beneficiarios/GLORIA_BORREGO/video_evidencia_02.mp4"
+      ],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_02.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_03.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_antes_04.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_01.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_02.jpg",
+          "nombre": "6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_03.jpg",
+          "nombre": "7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_04.jpg",
+          "nombre": "8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/evidencia_despues_05.jpg",
+          "nombre": "9.jpg"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/video_evidencia_01.mp4",
+          "nombre": "Video de WhatsApp 2025-11-28 a las 09.27.38_80524567.mp4"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/GLORIA_BORREGO/video_evidencia_02.mp4",
+          "nombre": "Video de WhatsApp 2025-11-28 a las 09.28.45_31a17987.mp4"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -572,15 +1366,48 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/NIDIA_GASCCA/Imagen_de_WhatsApp_2025_10_23_a_las_17.17.27_7dd14d37.jpg",
-        "assets/fotos_beneficiarios/NIDIA_GASCCA/Imagen_de_WhatsApp_2025_10_23_a_las_17.17.27_8ad4720b.jpg"
+        "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_antes_02.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/NIDIA_GASCCA/Imagen_de_WhatsApp_2025_10_23_a_las_17.17.28_14c19f0b.jpg",
-        "assets/fotos_beneficiarios/NIDIA_GASCCA/Imagen_de_WhatsApp_2025_10_23_a_las_17.17.28_b751ab15.jpg",
-        "assets/fotos_beneficiarios/NIDIA_GASCCA/Imagen_de_WhatsApp_2025_10_23_a_las_17.17.28_f8ebbae9.jpg"
+        "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_03.jpg"
       ],
-      "total": 5
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.17.27_7dd14d37.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.17.27_8ad4720b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.17.28_14c19f0b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.17.28_b751ab15.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_GASCA/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.17.28_f8ebbae9.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -596,20 +1423,83 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_08_26_a_las_12.32.21_ab8eae04.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_08_26_a_las_12.32.22_06d529b0.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_08_26_a_las_12.32.22_fca82936.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.48_116b677b.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.48_524e9f20.jpg"
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_05.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.49_548cd261.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.49_55738cdf.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.49_55adfd60.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.49_aa84c106.jpg",
-        "assets/fotos_beneficiarios/NOHORA_SILVA/Imagen_de_WhatsApp_2025_11_06_a_las_12.16.49_f2b2ad70.jpg"
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_05.jpg"
       ],
-      "total": 10
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-08-26 a las 12.32.21_ab8eae04.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-08-26 a las 12.32.22_06d529b0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-08-26 a las 12.32.22_fca82936.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.48_116b677b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.48_524e9f20.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.49_548cd261.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.49_55738cdf.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.49_55adfd60.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.49_aa84c106.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NORA_SILVA/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 12.16.49_f2b2ad70.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -625,41 +1515,246 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/1.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/2.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/3.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/4.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/5.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.39.42_739e7d55.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.39.44_0b528163.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.39.44_6da539e2.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.39.44_8a71cf51.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.53.04_8180f58a.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.53.05_019e2bcf.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_04_a_las_11.53.05_fb39b649.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_10_a_las_10.51.01_a4718bf1.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_10_a_las_10.51.02_84858c38.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_10_a_las_10.51.02_ab71da95.jpg"
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_08.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_09.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_10.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_11.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_12.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_13.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_14.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_15.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_10_a_las_10.51.02_b05d2c5a.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_15.06.03_ad5c4f64.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_15.06.03_cddec360.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_15.06.56_a0b710e4.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_16.57.58_a5150043.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_16.58.00_0ab757c8.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_11_a_las_16.58.00_8cab7a48.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.47_af9ce548.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.48_16b5e549.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.50_5a2978a6.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.54_f25dafe5.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.55_b72d108e.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.57_a4be3cf3.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.58_4b03bbc0.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.59_c3dd34ad.jpg",
-        "assets/fotos_beneficiarios/NIDIA_CAMPINO/Imagen_de_WhatsApp_2025_11_13_a_las_11.39.59_c60b8808.jpg"
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_09.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_10.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_11.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_12.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_13.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_14.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_15.jpg",
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_16.jpg"
       ],
-      "total": 31
+      "videos": [
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/video_evidencia_01.mp4"
+      ],
+      "documentos": [
+        "assets/fotos_beneficiarios/NIDIA_CAMPINO/documento_evidencia_01.pdf"
+      ],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_02.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_03.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_04.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_05.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.39.42_739e7d55.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.39.44_0b528163.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.39.44_6da539e2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.39.44_8a71cf51.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.53.04_8180f58a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.53.05_019e2bcf.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 11.53.05_fb39b649.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 10.51.01_a4718bf1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_14.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 10.51.02_84858c38.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_antes_15.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 10.51.02_ab71da95.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 10.51.02_b05d2c5a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 15.06.03_ad5c4f64.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 15.06.03_cddec360.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 15.06.56_a0b710e4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 16.57.58_a5150043.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 16.58.00_0ab757c8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-11 a las 16.58.00_8cab7a48.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.47_af9ce548.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.48_16b5e549.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.50_5a2978a6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.54_f25dafe5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.55_b72d108e.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.57_a4be3cf3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_14.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.58_4b03bbc0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_15.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.59_c3dd34ad.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/evidencia_despues_16.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 11.39.59_c60b8808.jpg"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/video_evidencia_01.mp4",
+          "nombre": "Video de WhatsApp 2025-11-28 a las 10.16.31_360708ba.mp4"
+        },
+        {
+          "tipo": "documento",
+          "fase": "documento",
+          "src": "assets/fotos_beneficiarios/NIDIA_CAMPINO/documento_evidencia_01.pdf",
+          "nombre": "NIDIA CAMPIÑO.pdf"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -675,23 +1770,104 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/1.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/10.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/11.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/12.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/13.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/2.jpg"
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_06.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/3.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/4.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/5.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/6.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/7.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/8.jpg",
-        "assets/fotos_beneficiarios/JAIRO_CALDERON/9.jpg"
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_07.jpg"
       ],
-      "total": 13
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_02.jpg",
+          "nombre": "10.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_03.jpg",
+          "nombre": "11.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_04.jpg",
+          "nombre": "12.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_05.jpg",
+          "nombre": "13.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_antes_06.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_01.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_02.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_03.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_04.jpg",
+          "nombre": "6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_05.jpg",
+          "nombre": "7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_06.jpg",
+          "nombre": "8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/JAIRO_CALDERON/evidencia_despues_07.jpg",
+          "nombre": "9.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -707,13 +1883,34 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/YENNY_GOMEZ/Imagen_de_WhatsApp_2025_10_14_a_las_16.08.41_4423e7d5.jpg"
+        "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_antes_01.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/YENNY_GOMEZ/Imagen_de_WhatsApp_2025_10_14_a_las_16.08.41_4b60c5ac.jpg",
-        "assets/fotos_beneficiarios/YENNY_GOMEZ/Imagen_de_WhatsApp_2025_10_14_a_las_16.08.41_9b8bd09d.jpg"
+        "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_despues_02.jpg"
       ],
-      "total": 3
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-14 a las 16.08.41_4423e7d5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-14 a las 16.08.41_4b60c5ac.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YENNY_GOMEZ/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-14 a las 16.08.41_9b8bd09d.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -729,21 +1926,90 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/LEONOR_MORENO/1.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.52_62b27ff4.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.52_b7ce5cc9.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.52_ea2e4b42.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.53_053fe227.jpg"
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_05.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.53_3cc36f23.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.53_b2cb210d.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.53_d9fc42dd.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.54_6427933c.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.54_7a0c96c5.jpg",
-        "assets/fotos_beneficiarios/LEONOR_MORENO/Imagen_de_WhatsApp_2025_10_23_a_las_17.27.54_e07c6292.jpg"
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_06.jpg"
       ],
-      "total": 11
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.52_62b27ff4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.52_b7ce5cc9.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.52_ea2e4b42.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.53_053fe227.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.53_3cc36f23.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.53_b2cb210d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.53_d9fc42dd.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.54_6427933c.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.54_7a0c96c5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LEONOR_MORENO/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.27.54_e07c6292.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -759,19 +2025,76 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/MARTHA_VEGA/1.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/2.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/3.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/4.jpg"
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_04.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/MARTHA_VEGA/5.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/6.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/7.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/8.jpg",
-        "assets/fotos_beneficiarios/MARTHA_VEGA/9.jpg"
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_05.jpg"
       ],
-      "total": 9
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_02.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_03.jpg",
+          "nombre": "3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_antes_04.jpg",
+          "nombre": "4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_01.jpg",
+          "nombre": "5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_02.jpg",
+          "nombre": "6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_03.jpg",
+          "nombre": "7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_04.jpg",
+          "nombre": "8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARTHA_VEGA/evidencia_despues_05.jpg",
+          "nombre": "9.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -787,25 +2110,126 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_10_23_a_las_17.13.20_192391ed.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_10_23_a_las_17.13.21_08a78513.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_10_23_a_las_17.13.22_40562d3f.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_10_23_a_las_17.13.22_419fde75.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_04_a_las_14.16.16_82e042f7.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_04_a_las_14.16.18_38146784.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_04_a_las_14.16.19_198196ca.jpg"
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_07.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_04_a_las_14.16.19_5c9a2f87.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_17.07.33_5b94bff1.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_17.07.33_71cefa82.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_17.07.34_84f19439.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_18_a_las_17.07.34_e99b4d6a.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_25_a_las_10.34.08_1e55b136.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_28_a_las_09.33.28_8a539ec8.jpg",
-        "assets/fotos_beneficiarios/CECILIA_TOVAR/Imagen_de_WhatsApp_2025_11_28_a_las_09.33.29_aad68b13.jpg"
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_08.jpg"
       ],
-      "total": 15
+      "videos": [
+        "assets/fotos_beneficiarios/CECILIA_TOVAR/video_evidencia_01.mp4"
+      ],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.13.20_192391ed.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.13.21_08a78513.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.13.22_40562d3f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.13.22_419fde75.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 14.16.16_82e042f7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 14.16.18_38146784.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_antes_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 14.16.19_198196ca.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-04 a las 14.16.19_5c9a2f87.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 17.07.33_5b94bff1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 17.07.33_71cefa82.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 17.07.34_84f19439.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 17.07.34_e99b4d6a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 10.34.08_1e55b136.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-28 a las 09.33.28_8a539ec8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/evidencia_despues_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-28 a las 09.33.29_aad68b13.jpg"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/CECILIA_TOVAR/video_evidencia_01.mp4",
+          "nombre": "Video de WhatsApp 2025-11-28 a las 09.33.54_a2c7659c.mp4"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -821,17 +2245,62 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_09_26_a_las_09.37.40_f8159eda.jpg",
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_09_26_a_las_09.37.41_7f7d72af.jpg",
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_11_06_a_las_15.05.45_ba0afbc8.jpg"
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_03.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_11_06_a_las_15.05.46_79103fcb.jpg",
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_11_06_a_las_15.05.46_d4ff2e6d.jpg",
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_11_06_a_las_15.05.46_ff5240b4.jpg",
-        "assets/fotos_beneficiarios/AMPARO_VARGAZ/Imagen_de_WhatsApp_2025_11_06_a_las_15.05.47_1fc64146.jpg"
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_04.jpg"
       ],
-      "total": 7
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.37.40_f8159eda.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.37.41_7f7d72af.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.05.45_ba0afbc8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.05.46_79103fcb.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.05.46_d4ff2e6d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.05.46_ff5240b4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/AMPARO_VARGAS/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.05.47_1fc64146.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -847,15 +2316,48 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/YOLANDA_OROZCO/Imagen_de_WhatsApp_2025_11_06_a_las_15.33.14_4423d0f5.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_OROZCO/Imagen_de_WhatsApp_2025_11_06_a_las_15.33.14_dc800cee.jpg"
+        "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_antes_02.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/YOLANDA_OROZCO/Imagen_de_WhatsApp_2025_11_06_a_las_15.41.30_706ecabc.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_OROZCO/Imagen_de_WhatsApp_2025_11_06_a_las_15.41.31_473657c6.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_OROZCO/Imagen_de_WhatsApp_2025_11_06_a_las_15.41.31_9741630f.jpg"
+        "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_03.jpg"
       ],
-      "total": 5
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.33.14_4423d0f5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.33.14_dc800cee.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.41.30_706ecabc.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.41.31_473657c6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_OROZCO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 15.41.31_9741630f.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -871,22 +2373,97 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_11_13_a_las_08.33.52_41df3259.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_11_13_a_las_08.33.52_e535e450.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_11_13_a_las_08.33.53_7db185fd.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_11_13_a_las_08.33.54_1287a7ad.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.37_98b8931b.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.38_5bcbe19f.jpg"
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_06.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.38_b2a1841d.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.38_bd9e3388.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.38_f8631bfa.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_04_a_las_09.44.39_9c2c4e91.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_09_a_las_09.43.48_a6907d30.jpg",
-        "assets/fotos_beneficiarios/YOLANDA_YUSTY/Imagen_de_WhatsApp_2025_12_09_a_las_09.43.49_ac69f42f.jpg"
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_06.jpg"
       ],
-      "total": 12
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 08.33.52_41df3259.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 08.33.52_e535e450.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 08.33.53_7db185fd.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 08.33.54_1287a7ad.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.37_98b8931b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.38_5bcbe19f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.38_b2a1841d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.38_bd9e3388.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.38_f8631bfa.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-04 a las 09.44.39_9c2c4e91.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.43.48_a6907d30.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YOLANDA_YUSTY/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-09 a las 09.43.49_ac69f42f.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -902,22 +2479,97 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/ADELINA_CORREA/DJI_20251218104721_0001_D.JPG",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/DJI_20251218104750_0002_D.JPG",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/DJI_20251218104802_0003_D.JPG",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_10_06_a_las_17.04.10_9f38ba73.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_10_09_a_las_18.15.45_bddbaf95.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_10_09_a_las_18.15.55_010dfb30.jpg"
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_06.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_10_09_a_las_18.15.55_772cf3b0.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_11_10_a_las_08.36.28_a7b90641.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_11_10_a_las_08.36.28_dd58704f.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_11_10_a_las_08.36.29_e8d2ad9f.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_11_10_a_las_08.36.35_50962cc1.jpg",
-        "assets/fotos_beneficiarios/ADELINA_CORREA/Imagen_de_WhatsApp_2025_11_10_a_las_08.36.36_de8f2985.jpg"
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_06.jpg"
       ],
-      "total": 12
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_01.jpg",
+          "nombre": "DJI_20251218104721_0001_D.JPG"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_02.jpg",
+          "nombre": "DJI_20251218104750_0002_D.JPG"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_03.jpg",
+          "nombre": "DJI_20251218104802_0003_D.JPG"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-06 a las 17.04.10_9f38ba73.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.15.45_bddbaf95.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.15.55_010dfb30.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-09 a las 18.15.55_772cf3b0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 08.36.28_a7b90641.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 08.36.28_dd58704f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 08.36.29_e8d2ad9f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 08.36.35_50962cc1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELINA_CORREA/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 08.36.36_de8f2985.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -933,18 +2585,69 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.45_1c0a176b.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.45_34158d5d.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.45_e6c384ae.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.46_45f76cfa.jpg"
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_04.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.46_5a9b0686.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.46_8507bb74.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.46_cc7a0197.jpg",
-        "assets/fotos_beneficiarios/ADELA_SIERRA/Imagen_de_WhatsApp_2025_11_06_a_las_16.01.47_fbf43a6d.jpg"
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_04.jpg"
       ],
-      "total": 8
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.45_1c0a176b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.45_34158d5d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.45_e6c384ae.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.46_45f76cfa.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.46_5a9b0686.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.46_8507bb74.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.46_cc7a0197.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/ADELA_SIERRA/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.01.47_fbf43a6d.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -959,8 +2662,70 @@ const INITIAL_BENEFICIARIOS = [
     "estado": "APROBADO (SI)",
     "vigencia": "2025",
     "fotos": {
-      "antes": [],
-      "despues": []
+      "antes": [
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_04.jpg"
+      ],
+      "despues": [
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_04.jpg"
+      ],
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 08.48.18_7542f09a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 08.48.19_4c596bc5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 08.48.19_695bb3a2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.20.00_5ef92a83.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.20.00_e864834d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.20.01_945c1ca9.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.20.01_c378baa7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YAMILE_CASTRO/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-06 a las 16.20.01_c90b9a3a.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -976,40 +2741,231 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/1.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/2.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_10_23_a_las_17.02.30_10ac7b77.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_10_23_a_las_17.02.31_9d787c5b.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_10_23_a_las_17.02.31_ecad332d.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_12_a_las_08.25.58_c4003442.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_12_a_las_08.25.59_584262ef.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_12_a_las_08.25.59_f5270b75.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_12_a_las_08.26.00_263da795.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_12_a_las_08.26.00_d4d19eb0.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.15.59_8b5495b4.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.06_758ddff2.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.23_e5608ea3.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.24_259688c0.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.24_335dfb49.jpg"
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_06.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_07.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_08.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_09.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_10.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_11.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_12.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_13.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_14.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_15.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.30_6d5eb82f.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.31_557a7787.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_13_a_las_14.16.31_dbabe19b.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.32_128b6ddb.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.32_a5f54e4e.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.33_9d0954a8.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.33_a2608a20.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.33_f86ba132.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_11_25_a_las_08.33.34_c2c1be45.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_11.09.18_24a451b1.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_11.09.19_b5ba5e4b.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_16.07.00_17122c20.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_16.07.00_4a35f9b4.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_16.07.00_eaad761d.jpg",
-        "assets/fotos_beneficiarios/CECILIA_FAJARDO/Imagen_de_WhatsApp_2025_12_02_a_las_16.07.01_f15bc8b7.jpg"
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_07.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_08.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_09.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_10.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_11.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_12.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_13.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_14.jpg",
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_15.jpg"
       ],
-      "total": 30
+      "videos": [
+        "assets/fotos_beneficiarios/CECILIA_FAJARDO/video_evidencia_01.mp4"
+      ],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_01.jpg",
+          "nombre": "1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_02.jpg",
+          "nombre": "2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.02.30_10ac7b77.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.02.31_9d787c5b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.02.31_ecad332d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-12 a las 08.25.58_c4003442.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-12 a las 08.25.59_584262ef.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-12 a las 08.25.59_f5270b75.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-12 a las 08.26.00_263da795.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-12 a las 08.26.00_d4d19eb0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.15.59_8b5495b4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.06_758ddff2.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.23_e5608ea3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_14.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.24_259688c0.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_antes_15.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.24_335dfb49.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.30_6d5eb82f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.31_557a7787.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-13 a las 14.16.31_dbabe19b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.32_128b6ddb.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.32_a5f54e4e.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.33_9d0954a8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.33_a2608a20.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_08.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.33_f86ba132.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_09.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-25 a las 08.33.34_c2c1be45.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_10.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.09.18_24a451b1.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_11.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 11.09.19_b5ba5e4b.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_12.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 16.07.00_17122c20.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_13.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 16.07.00_4a35f9b4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_14.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 16.07.00_eaad761d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/evidencia_despues_15.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-02 a las 16.07.01_f15bc8b7.jpg"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/CECILIA_FAJARDO/video_evidencia_01.mp4",
+          "nombre": "Video de WhatsApp 2025-11-28 a las 08.32.29_f02837d4.mp4"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1025,17 +2981,62 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.28_1294fe5f.jpg",
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.28_81b26455.jpg",
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.28_fce71391.jpg"
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_03.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.29_232b5f63.jpg",
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.29_313283eb.jpg",
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.29_d05c47ee.jpg",
-        "assets/fotos_beneficiarios/LUDIVIA/Imagen_de_WhatsApp_2025_10_24_a_las_07.36.29_d0b3477b.jpg"
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_04.jpg"
       ],
-      "total": 7
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.28_1294fe5f.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.28_81b26455.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.28_fce71391.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.29_232b5f63.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.29_313283eb.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.29_d05c47ee.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/LUDIVIA_RAMIREZ/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-24 a las 07.36.29_d0b3477b.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1051,19 +3052,76 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.02_06786c26.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.02_17883af8.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.03_3a92a19e.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.03_3bb03e22.jpg"
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_04.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.03_668edef4.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.03_b5eb8197.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.04_652d26d3.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_10_23_a_las_17.22.04_e58cd476.jpg",
-        "assets/fotos_beneficiarios/YINET_BERMEO/Imagen_de_WhatsApp_2025_11_10_a_las_10.39.27_212c0d9d.jpg"
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_05.jpg"
       ],
-      "total": 9
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.02_06786c26.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.02_17883af8.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.03_3a92a19e.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.03_3bb03e22.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.03_668edef4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.03_b5eb8197.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.04_652d26d3.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-10-23 a las 17.22.04_e58cd476.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/YINET_BERMEO/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-10 a las 10.39.27_212c0d9d.jpg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1079,23 +3137,112 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.32_574b6421.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.33_2058c420.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.33_cc4980ba.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.33_e431729e.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.34_ce3f51f9.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_09_26_a_las_09.41.34_ebbfb780.jpg"
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_02.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_03.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_04.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_05.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_06.jpg"
       ],
       "despues": [
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_11_18_a_las_16.44.31_3da334e4.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_11_18_a_las_16.44.31_765af667.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_11_18_a_las_16.44.31_c1b3ab5a.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_12_01_a_las_09.57.47_dcdb65d6.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_12_01_a_las_09.57.48_035f08c7.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_12_01_a_las_09.57.48_21fb46e7.jpg",
-        "assets/fotos_beneficiarios/RAFAEL_JIMENES/Imagen_de_WhatsApp_2025_12_01_a_las_09.57.48_94fcbc18.jpg"
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_03.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_04.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_05.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_06.jpg",
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_07.jpg"
       ],
-      "total": 13
+      "videos": [
+        "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/video_evidencia_01.mp4"
+      ],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.32_574b6421.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.33_2058c420.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.33_cc4980ba.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.33_e431729e.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.34_ce3f51f9.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_antes_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-26 a las 09.41.34_ebbfb780.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.44.31_3da334e4.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.44.31_765af667.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_03.jpg",
+          "nombre": "Imagen de WhatsApp 2025-11-18 a las 16.44.31_c1b3ab5a.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_04.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-01 a las 09.57.47_dcdb65d6.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_05.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-01 a las 09.57.48_035f08c7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_06.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-01 a las 09.57.48_21fb46e7.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/evidencia_despues_07.jpg",
+          "nombre": "Imagen de WhatsApp 2025-12-01 a las 09.57.48_94fcbc18.jpg"
+        },
+        {
+          "tipo": "video",
+          "fase": "video",
+          "src": "assets/fotos_beneficiarios/RAFAEL_JIMENEZ/video_evidencia_01.mp4",
+          "nombre": "Video de WhatsApp 2025-11-25 a las 10.51.09_bed86151.mp4"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1111,7 +3258,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1127,7 +3277,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1143,7 +3296,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1159,7 +3315,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1175,7 +3334,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1191,7 +3353,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1207,7 +3372,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1223,7 +3391,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1239,7 +3410,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1255,7 +3429,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1271,7 +3448,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1287,7 +3467,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1303,7 +3486,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1319,7 +3505,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1335,7 +3524,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1351,7 +3543,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1367,7 +3562,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1383,7 +3581,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1399,7 +3600,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1415,7 +3619,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1431,7 +3638,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1447,7 +3657,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1463,7 +3676,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1479,7 +3695,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1495,7 +3714,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1511,7 +3733,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1527,7 +3752,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1543,7 +3771,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1559,7 +3790,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1575,7 +3809,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1591,7 +3828,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1607,7 +3847,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1623,7 +3866,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1639,7 +3885,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1655,7 +3904,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1671,7 +3923,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1687,7 +3942,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1703,7 +3961,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1719,7 +3980,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1735,7 +3999,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1751,7 +4018,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1767,7 +4037,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1783,7 +4056,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1799,7 +4075,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1815,7 +4094,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1831,7 +4113,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1847,7 +4132,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1863,7 +4151,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1879,7 +4170,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1894,8 +4188,49 @@ const INITIAL_BENEFICIARIOS = [
     "estado": "APROBADO (SI)",
     "vigencia": "2025",
     "fotos": {
-      "antes": [],
-      "despues": []
+      "antes": [
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_01.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_02.jpg"
+      ],
+      "despues": [
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_01.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_02.jpg",
+        "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_03.jpg"
+      ],
+      "videos": [],
+      "documentos": [],
+      "todas": [
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_01.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-04 a las 09.18.53_17deb24d.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "antes",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_antes_02.jpg",
+          "nombre": "Imagen de WhatsApp 2025-09-04 a las 09.18.53_415ea4c5.jpg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_01.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.53 (1).jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_02.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.53.jpeg"
+        },
+        {
+          "tipo": "foto",
+          "fase": "despues",
+          "src": "assets/fotos_beneficiarios/MARGOTH_TOVAR/evidencia_despues_03.jpg",
+          "nombre": "WhatsApp Image 2026-01-14 at 15.14.54.jpeg"
+        }
+      ]
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1911,7 +4246,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1927,7 +4265,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1943,7 +4284,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1959,7 +4303,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1975,7 +4322,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -1991,7 +4341,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2007,7 +4360,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2023,7 +4379,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2039,7 +4398,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2055,7 +4417,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2071,7 +4436,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2087,7 +4455,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2103,7 +4474,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2119,7 +4493,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2135,7 +4512,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2151,7 +4531,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2167,7 +4550,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2183,7 +4569,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2199,7 +4588,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2215,7 +4607,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2231,7 +4626,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2247,7 +4645,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2263,7 +4664,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2279,7 +4683,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2295,7 +4702,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2311,7 +4721,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2327,7 +4740,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2343,7 +4759,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2359,7 +4778,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2375,7 +4797,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2391,7 +4816,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2407,7 +4835,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2423,7 +4854,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2439,7 +4873,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2455,7 +4892,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2471,7 +4911,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2487,7 +4930,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2503,7 +4949,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2519,7 +4968,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2535,7 +4987,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2551,7 +5006,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2567,7 +5025,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2583,7 +5044,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2599,7 +5063,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2615,7 +5082,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2631,7 +5101,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2647,7 +5120,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2663,7 +5139,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2679,7 +5158,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2695,7 +5177,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2711,7 +5196,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2727,7 +5215,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   },
@@ -2743,7 +5234,10 @@ const INITIAL_BENEFICIARIOS = [
     "vigencia": "2025",
     "fotos": {
       "antes": [],
-      "despues": []
+      "despues": [],
+      "videos": [],
+      "documentos": [],
+      "todas": []
     },
     "fechaRegistro": "2025-01-15"
   }
