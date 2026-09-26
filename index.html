@@ -14,7 +14,7 @@
   <!-- SheetJS para Exportación a Excel en 1 clic -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-  <link rel="stylesheet" href="css/styles.css?v=3.5">
+  <link rel="stylesheet" href="css/styles.css?v=3.6">
 </head>
 <body>
 
@@ -206,11 +206,17 @@
               <span class="block-title antes">🟧 FOTOS DEL ANTES (Estado Inicial)</span>
               <span class="block-counter" id="counterFotosAntes">0 fotos</span>
             </div>
-            <!-- Botón Grande Directo para Subir Fotos del Antes -->
-            <label class="btn-subir-directo antes" title="Tomar foto con la cámara o subir desde la galería">
-              <input type="file" id="inputFotoAntes" accept="image/*" multiple capture="environment" style="display: none;">
-              <span>📷 + Subir Foto Antes</span>
-            </label>
+            <!-- Botones Directos: Cámara y Galería -->
+            <div class="block-actions-group">
+              <label class="btn-subir-directo camara antes" title="Abrir cámara del celular para tomar foto en vivo">
+                <input type="file" id="inputCamaraAntes" accept="image/*" capture="environment" style="display: none;">
+                <span>📸 Tomar Foto</span>
+              </label>
+              <label class="btn-subir-directo galeria antes" title="Elegir una o varias fotos de la galería">
+                <input type="file" id="inputGaleriaAntes" accept="image/*" multiple style="display: none;">
+                <span>🖼️ Galería</span>
+              </label>
+            </div>
           </div>
           <!-- Cuadrícula Limpia de Fotos del Antes -->
           <div class="direct-photos-grid" id="gridFotosAntes">
@@ -225,11 +231,17 @@
               <span class="block-title despues">🟩 FOTOS DEL DESPUÉS (Obra Entregada)</span>
               <span class="block-counter" id="counterFotosDespues">0 fotos</span>
             </div>
-            <!-- Botón Grande Directo para Subir Fotos del Después -->
-            <label class="btn-subir-directo despues" title="Tomar foto con la cámara o subir desde la galería">
-              <input type="file" id="inputFotoDespues" accept="image/*" multiple capture="environment" style="display: none;">
-              <span>📸 + Subir Foto Después</span>
-            </label>
+            <!-- Botones Directos: Cámara y Galería -->
+            <div class="block-actions-group">
+              <label class="btn-subir-directo camara despues" title="Abrir cámara del celular para tomar foto en vivo">
+                <input type="file" id="inputCamaraDespues" accept="image/*" capture="environment" style="display: none;">
+                <span>📸 Tomar Foto</span>
+              </label>
+              <label class="btn-subir-directo galeria despues" title="Elegir una o varias fotos de la galería">
+                <input type="file" id="inputGaleriaDespues" accept="image/*" multiple style="display: none;">
+                <span>🖼️ Galería</span>
+              </label>
+            </div>
           </div>
           <!-- Cuadrícula Limpia de Fotos del Después -->
           <div class="direct-photos-grid" id="gridFotosDespues">
@@ -401,8 +413,8 @@
     </div>
   </div>
 
-  <!-- Scripts con Cache-Buster v3.5 -->
-  <script src="js/data.js?v=3.5"></script>
-  <script src="js/app.js?v=3.5"></script>
+  <!-- Scripts con Cache-Buster v3.6 -->
+  <script src="js/data.js?v=3.6"></script>
+  <script src="js/app.js?v=3.6"></script>
 </body>
 </html>

@@ -144,9 +144,15 @@ function setupEventListeners() {
     });
   });
 
-  // Subida de Fotos en Modal (Directa y Múltiple)
-  document.getElementById('inputFotoAntes').addEventListener('change', (e) => handlePhotoUpload(e, 'antes'));
-  document.getElementById('inputFotoDespues').addEventListener('change', (e) => handlePhotoUpload(e, 'despues'));
+  // Subida de Fotos en Modal: Cámara en Vivo y Galería
+  const bindUpload = (id, type) => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', (e) => handlePhotoUpload(e, type));
+  };
+  bindUpload('inputCamaraAntes', 'antes');
+  bindUpload('inputGaleriaAntes', 'antes');
+  bindUpload('inputCamaraDespues', 'despues');
+  bindUpload('inputGaleriaDespues', 'despues');
 
   // Botón Inferior para Cerrar Ficha
   const btnCerrarInferior = document.getElementById('btnCerrarModalInferior');

@@ -717,40 +717,60 @@ body::after {
   margin-top: 2px;
 }
 
+.block-actions-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Botones Grandes y Sencillos para Subir Fotos */
 .btn-subir-directo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
+  gap: 6px;
+  padding: 9px 15px;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
   user-select: none;
 }
 
-.btn-subir-directo.antes {
-  background: linear-gradient(135deg, #d97706, #b45309);
+/* Cámara Directa */
+.btn-subir-directo.camara.antes {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
   color: #fff;
-  border: 1px solid #f59e0b;
+  border: 1px solid #fbbf24;
 }
 
-.btn-subir-directo.despues {
-  background: linear-gradient(135deg, #059669, #047857);
+.btn-subir-directo.galeria.antes {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.btn-subir-directo.camara.despues {
+  background: linear-gradient(135deg, #10b981, #059669);
   color: #fff;
-  border: 1px solid #10b981;
+  border: 1px solid #34d399;
+}
+
+.btn-subir-directo.galeria.despues {
+  background: rgba(16, 185, 129, 0.14);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
 }
 
 .btn-subir-directo:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
 }
 
 .btn-subir-directo:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .direct-photos-grid {
@@ -763,14 +783,21 @@ body::after {
 }
 
 @media (max-width: 600px) {
-  .direct-photos-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+  .block-actions-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
   .btn-subir-directo {
     width: 100%;
     justify-content: center;
-    padding: 12px;
+    padding: 11px 6px;
+    font-size: 0.8rem;
+  }
+  .direct-photos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
   }
 }
 
