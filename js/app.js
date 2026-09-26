@@ -165,6 +165,13 @@ function setupEventListeners() {
   document.getElementById('btnLightboxClose').addEventListener('click', closeLightbox);
   document.getElementById('btnLightboxPrev').addEventListener('click', prevLightbox);
   document.getElementById('btnLightboxNext').addEventListener('click', nextLightbox);
+
+  // Herramientas de Edición de Foto en el Lightbox
+  document.getElementById('btnLightboxRotate').addEventListener('click', rotateCurrentLightboxPhoto);
+  document.getElementById('btnLightboxMovePhase').addEventListener('click', moveCurrentLightboxPhotoPhase);
+  document.getElementById('btnLightboxEditNote').addEventListener('click', editCurrentLightboxPhotoNote);
+  document.getElementById('btnLightboxDelete').addEventListener('click', deleteCurrentLightboxPhoto);
+
   lightboxModal.addEventListener('click', (e) => {
     if (e.target.id === 'lightboxModal' || e.target.classList.contains('lightbox-container')) {
       closeLightbox();
@@ -418,13 +425,14 @@ function renderDirectEvidenceBlocks(b) {
       card.className = 'evidence-thumb-card';
       card.innerHTML = `
         <img src="${src}" class="evidence-thumb-img" alt="Foto ${fase}" loading="lazy">
-        <button class="evidence-delete-btn" title="Eliminar foto">✕</button>
+        <button class="evidence-delete-btn" title="Eliminar fotografía">🗑️</button>
+        <button class="evidence-edit-btn" title="Editar foto (rotar, mover o cambiar nota)">✏️</button>
       `;
 
-      // Eliminar foto con confirmación
+      // Eliminar foto con confirmación rápida desde miniatura
       card.querySelector('.evidence-delete-btn').addEventListener('click', (e) => {
         e.stopPropagation();
-        if (confirm(`¿Deseas eliminar esta fotografía de ${fase}?`)) {
+        if (confirm(`¿Deseas eliminar permanentemente esta fotografía de ${fase.toUpperCase()}?`)) {
           b.fotos[fase].splice(idx, 1);
           if (b.fotos.todas) {
             b.fotos.todas = b.fotos.todas.filter(item => item.src !== src);
@@ -434,6 +442,12 @@ function renderDirectEvidenceBlocks(b) {
           renderCards();
           updateKPIs();
         }
+      });
+
+      // Editar foto: abre el visor interactivo de edición
+      card.querySelector('.evidence-edit-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        openLightbox(lightboxItems, idx);
       });
 
       // Abrir en visor de pantalla completa (Lightbox)
@@ -522,6 +536,15 @@ function updateLightboxView() {
   const faseLabel = item.fase ? ` • Fase ${item.fase.toUpperCase()}` : '';
   document.getElementById('lightboxTitle').textContent = (item.nombre || `Evidencia fotográfica`) + faseLabel;
   document.getElementById('lightboxCounter').textContent = `Foto ${currentLightboxIndex + 1} de ${currentLightboxList.length}`;
+
+  // Actualizar botón interactivo para mover entre Antes y Después
+  const labelMove = document.getElementById('labelMovePhase');
+  const iconMove = document.getElementById('iconMovePhase');
+  if (labelMove && iconMove) {
+    const isAntes = (item.fase === 'antes');
+    labelMove.textContent = isAntes ? 'Mover a DESPUÉS' : 'Mover a ANTES';
+    iconMove.textContent = isAntes ? '🟩' : '🟧';
+  }
 }
 
 function nextLightbox() {
@@ -540,6 +563,190 @@ function prevLightbox() {
     currentLightboxIndex = currentLightboxList.length - 1;
   }
   updateLightboxView();
+}
+
+// Rotar fotografía 90 grados permanentemente en Canvas
+async function rotateCurrentLightboxPhoto() {
+  if (!currentLightboxList.length) return;
+  const item = currentLightboxList[currentLightboxIndex];
+  const oldSrc = item.src || item;
+
+  const btn = document.getElementById('btnLightboxRotate');
+  const originalHtml = btn.innerHTML;
+  btn.innerHTML = '<span>⏳</span> <span>Rotando...</span>';
+  btn.disabled = true;
+
+  try {
+    const newSrc = await rotateImage90(oldSrc);
+    item.src = newSrc;
+    document.getElementById('lightboxImg').src = newSrc;
+
+    const b = dbBeneficiarios.find(x => x.id === selectedBeneficiaryId);
+    if (b && b.fotos) {
+      ['antes', 'despues'].forEach(fase => {
+        if (b.fotos[fase]) {
+          const idx = b.fotos[fase].indexOf(oldSrc);
+          if (idx !== -1) b.fotos[fase][idx] = newSrc;
+        }
+      });
+      if (b.fotos.todas) {
+        b.fotos.todas.forEach(t => {
+          if (t.src === oldSrc) t.src = newSrc;
+        });
+      }
+      saveToStorage();
+      renderDirectEvidenceBlocks(b);
+    }
+
+    btn.innerHTML = '<span>✅</span> <span>¡Rotada 90°!</span>';
+    setTimeout(() => {
+      btn.innerHTML = originalHtml;
+      btn.disabled = false;
+    }, 1200);
+  } catch (err) {
+    console.error('Error al rotar imagen:', err);
+    btn.innerHTML = originalHtml;
+    btn.disabled = false;
+    alert('No fue posible rotar la imagen: ' + (err.message || 'Error en formato'));
+  }
+}
+
+function rotateImage90(src) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    if (!src.startsWith('data:')) {
+      img.crossOrigin = 'anonymous';
+    }
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.height;
+        canvas.height = img.width;
+        const ctx = canvas.getContext('2d');
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((90 * Math.PI) / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+        const rotatedDataUrl = canvas.toDataURL('image/jpeg', 0.92);
+        resolve(rotatedDataUrl);
+      } catch (err) {
+        console.warn('Canvas rotation fallback:', err);
+        reject(err);
+      }
+    };
+    img.onerror = () => reject(new Error('No se pudo cargar la imagen para rotación'));
+    img.src = src;
+  });
+}
+
+// Mover foto entre fases: Antes <-> Después
+function moveCurrentLightboxPhotoPhase() {
+  if (!currentLightboxList.length) return;
+  const item = currentLightboxList[currentLightboxIndex];
+  const b = dbBeneficiarios.find(x => x.id === selectedBeneficiaryId);
+  if (!b || !b.fotos) return;
+
+  const currentFase = item.fase || (b.fotos.antes && b.fotos.antes.includes(item.src) ? 'antes' : 'despues');
+  const targetFase = currentFase === 'antes' ? 'despues' : 'antes';
+
+  // Quitar de la fase de origen
+  if (b.fotos[currentFase]) {
+    const idx = b.fotos[currentFase].indexOf(item.src);
+    if (idx !== -1) b.fotos[currentFase].splice(idx, 1);
+  }
+
+  // Insertar en la fase de destino
+  if (!b.fotos[targetFase]) b.fotos[targetFase] = [];
+  b.fotos[targetFase].push(item.src);
+
+  // Actualizar en el registro general b.fotos.todas
+  if (b.fotos.todas) {
+    b.fotos.todas.forEach(t => {
+      if (t.src === item.src) t.fase = targetFase;
+    });
+  }
+
+  // Actualizar el item del visor
+  item.fase = targetFase;
+  if (item.nombre) {
+    if (targetFase === 'despues') {
+      item.nombre = item.nombre.replace(/ANTES/gi, 'DESPUÉS');
+    } else {
+      item.nombre = item.nombre.replace(/DESPUÉS|DESPUES/gi, 'ANTES');
+    }
+  }
+
+  saveToStorage();
+  renderDirectEvidenceBlocks(b);
+  renderCards();
+  updateKPIs();
+  updateLightboxView();
+
+  const labelMove = document.getElementById('labelMovePhase');
+  if (labelMove) {
+    labelMove.textContent = '¡Movida!';
+    setTimeout(() => updateLightboxView(), 1000);
+  }
+}
+
+// Editar nota o descripción de la fotografía
+function editCurrentLightboxPhotoNote() {
+  if (!currentLightboxList.length) return;
+  const item = currentLightboxList[currentLightboxIndex];
+  const b = dbBeneficiarios.find(x => x.id === selectedBeneficiaryId);
+  
+  const currentTitle = item.nombre || '';
+  const nuevoTitulo = prompt('Edita la nota o título descriptivo de esta fotografía:', currentTitle);
+  if (nuevoTitulo === null) return;
+
+  const clean = nuevoTitulo.trim();
+  if (!clean) return;
+
+  item.nombre = clean;
+  if (b && b.fotos && b.fotos.todas) {
+    b.fotos.todas.forEach(t => {
+      if (t.src === item.src) t.nombre = clean;
+    });
+  }
+
+  saveToStorage();
+  updateLightboxView();
+  if (b) renderDirectEvidenceBlocks(b);
+}
+
+// Eliminar fotografía desde el visor Lightbox
+function deleteCurrentLightboxPhoto() {
+  if (!currentLightboxList.length) return;
+  const item = currentLightboxList[currentLightboxIndex];
+  
+  const faseName = (item.fase || 'esta').toUpperCase();
+  if (!confirm(`¿Estás seguro de que deseas eliminar permanentemente esta fotografía de ${faseName}?`)) return;
+
+  const b = dbBeneficiarios.find(x => x.id === selectedBeneficiaryId);
+  if (b && b.fotos) {
+    const fase = item.fase || (b.fotos.antes && b.fotos.antes.includes(item.src) ? 'antes' : 'despues');
+    if (b.fotos[fase]) {
+      const idx = b.fotos[fase].indexOf(item.src);
+      if (idx !== -1) b.fotos[fase].splice(idx, 1);
+    }
+    if (b.fotos.todas) {
+      b.fotos.todas = b.fotos.todas.filter(t => t.src !== item.src);
+    }
+    saveToStorage();
+    renderDirectEvidenceBlocks(b);
+    renderCards();
+    updateKPIs();
+  }
+
+  // Quitar del visor
+  currentLightboxList.splice(currentLightboxIndex, 1);
+  if (currentLightboxList.length === 0) {
+    closeLightbox();
+  } else {
+    if (currentLightboxIndex >= currentLightboxList.length) {
+      currentLightboxIndex = currentLightboxList.length - 1;
+    }
+    updateLightboxView();
+  }
 }
 
 // 7. Subida de Fotos en Vivo (Múltiple y Sencilla desde Cámara o Galería)

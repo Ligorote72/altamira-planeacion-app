@@ -14,7 +14,7 @@
   <!-- SheetJS para Exportación a Excel en 1 clic -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-  <link rel="stylesheet" href="css/styles.css?v=3.6">
+  <link rel="stylesheet" href="css/styles.css?v=3.7">
 </head>
 <body>
 
@@ -404,8 +404,24 @@
       <div class="lightbox-content">
         <img src="" id="lightboxImg" alt="Fotografía en alta resolución" class="lightbox-image">
         <div class="lightbox-meta">
-          <div id="lightboxTitle" style="font-weight: 600; color: #fff; font-size: 0.95rem;">Foto</div>
+          <div id="lightboxTitle" style="font-weight: 600; color: #fff; font-size: 0.92rem;">Foto</div>
           <div id="lightboxCounter" style="font-size: 0.8rem; color: var(--emerald-primary); font-weight: 600;">1 / 1</div>
+        </div>
+
+        <!-- BARRA DE EDICIÓN Y GESTIÓN DE LA FOTO -->
+        <div class="lightbox-toolbar" id="lightboxToolbar">
+          <button class="lightbox-tool-btn" id="btnLightboxRotate" title="Girar fotografía 90 grados">
+            <span>🔄</span> <span>Rotar 90°</span>
+          </button>
+          <button class="lightbox-tool-btn" id="btnLightboxMovePhase" title="Cambiar fase entre Antes y Después">
+            <span id="iconMovePhase">🔀</span> <span id="labelMovePhase">Mover a Después</span>
+          </button>
+          <button class="lightbox-tool-btn" id="btnLightboxEditNote" title="Editar descripción o nota">
+            <span>✏️</span> <span>Editar Nota</span>
+          </button>
+          <button class="lightbox-tool-btn delete" id="btnLightboxDelete" title="Eliminar fotografía">
+            <span>🗑️</span> <span>Eliminar</span>
+          </button>
         </div>
       </div>
 
@@ -413,8 +429,8 @@
     </div>
   </div>
 
-  <!-- Scripts con Cache-Buster v3.6 -->
-  <script src="js/data.js?v=3.6"></script>
-  <script src="js/app.js?v=3.6"></script>
+  <!-- Scripts con Cache-Buster v3.7 -->
+  <script src="js/data.js?v=3.7"></script>
+  <script src="js/app.js?v=3.7"></script>
 </body>
 </html>
